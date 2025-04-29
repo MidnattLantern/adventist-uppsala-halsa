@@ -35,3 +35,63 @@ npm install gh-pages --save-dev
 ```zsh
 npm run deploy
 ```
+
+Fonts and assets: Credits
+===
+Montserrat: https://fonts.google.com/specimen/Montserrat/license
+Merriweather: https://fonts.google.com/specimen/Merriweather/license?query=Merriweather
+Organization logo: https://www.adventist.design/downloads/logo/
+
+
+Fonts, assets, colors: How to use
+===
+Fonts:
+---
+
+The fonts are imported in index.html inside the public directory. The snippet looks like the following:
+```html
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+```
+For this project, all variables, such as fonts, are located in the index.css file. Should you want to organize them in a separate file (i.e variables.css), make sure to make an import at index.css. Example:
+```css
+@import './directory-to-variables/variables.css';
+```
+Respective fonts can be used as usual in CSS files, but there are CSS variable from variables.css inside the styles directory `--font-theme-primary` for Merriweather and `--font-theme-secondary` for Montserrat. Example:
+```css
+.Text1 {
+    font-family: var(--font-theme-primary)
+}
+.Text2 {
+    font-family: var(--font-theme-secondary)
+}
+```
+
+Colors:
+All the colors used across the project are established as a variable inside index.css because the naming makes for good self-documentation. It is encouraged to use for instance `color: var(--color-theme-primary)` rather than `color: #3B7B88`.
+
+
+Responsiveness
+===
+The project is designed with a mobile-first approach. CSS files use three @media queries to adjust for larger screens by detecting min-width.
+Small: default
+Medium: @media (min-width: 480px)
+Large: @media (min-width: 768px)
+X-Large: @media (min-width: 1280px)
+
+App.tsx
+===
+Regarding responsiveness, App.tsx determines the dimensions of the header, main and footer. Each respective component has no size limit and are restricted by App.tsx
+
+Components
+===
+Inside the components directory, there are folders/ directories for each component. They come with a JSX file (written in TypeScript), a module.css file and a test file. Each component are wrapped in a ComponentContainer div element.
+
+Manual Testing
+===
+The project was manually tested using an iPhone 13 mini and a web browser on a MacBook 13 inch.
+
+Unit Testing
+===
+Each JSX file (aside from index.tsx) has a respective test.tsx file using Jest.
