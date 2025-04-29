@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/adventist-uppsala-halsa/static/css/main.04c08f5f.css",
-    "main.js": "/adventist-uppsala-halsa/static/js/main.79ac4023.js",
+    "main.css": "/adventist-uppsala-halsa/static/css/main.929662cd.css",
+    "main.js": "/adventist-uppsala-halsa/static/js/main.2da5ccd6.js",
     "static/js/453.15b4cdc3.chunk.js": "/adventist-uppsala-halsa/static/js/453.15b4cdc3.chunk.js",
-    "static/media/adventist-symbol-cave.png": "/adventist-uppsala-halsa/static/media/adventist-symbol-cave.4b2aab5e8ecc016ee08d.png",
+    "static/media/adventist-symbol-cave.png": "/adventist-uppsala-halsa/static/media/adventist-symbol-cave.52d66fd34754db21b87b.png",
     "index.html": "/adventist-uppsala-halsa/index.html",
-    "main.04c08f5f.css.map": "/adventist-uppsala-halsa/static/css/main.04c08f5f.css.map",
-    "main.79ac4023.js.map": "/adventist-uppsala-halsa/static/js/main.79ac4023.js.map",
+    "main.929662cd.css.map": "/adventist-uppsala-halsa/static/css/main.929662cd.css.map",
+    "main.2da5ccd6.js.map": "/adventist-uppsala-halsa/static/js/main.2da5ccd6.js.map",
     "453.15b4cdc3.chunk.js.map": "/adventist-uppsala-halsa/static/js/453.15b4cdc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.04c08f5f.css",
-    "static/js/main.79ac4023.js"
+    "static/css/main.929662cd.css",
+    "static/js/main.2da5ccd6.js"
   ]
 }
