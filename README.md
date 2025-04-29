@@ -13,7 +13,7 @@ npx create-react-app app-name --template typescript
 
 Deployment
 ===
-AUH is a static web project, so it’s supported by GitHub Pages.
+AUH is a static web project, so it’s supported by GitHub Pages. <br/>
 How to deploy:
 1. Install the necessary packages:
 ```zsh
@@ -38,10 +38,10 @@ npm run deploy
 
 Fonts and assets: Credits
 ===
-Montserrat: https://fonts.google.com/specimen/Montserrat/license
-Merriweather: https://fonts.google.com/specimen/Merriweather/license?query=Merriweather
-Organization logo: https://www.adventist.design/downloads/logo/
-
+Montserrat: https://fonts.google.com/specimen/Montserrat/license <br/>
+Merriweather: https://fonts.google.com/specimen/Merriweather/license?query=Merriweather <br/>
+Organization logo: https://www.adventist.design/downloads/logo/ <br/>
+Favicon and general assets: Alma Isaksson <br/>
 
 Fonts, assets, colors: How to use
 ===

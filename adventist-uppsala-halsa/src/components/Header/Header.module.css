@@ -1,0 +1,38 @@
+.HeaderComponentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 80px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+.Logo:hover {
+    border-bottom: 2px solid var(--color-cave);
+    cursor: pointer;
+}
+.LogoIcon {
+    width: 75px;
+    height: auto;
+    pointer-events: none;
+    margin-right: 15px;
+    pointer-events: none;
+}
+.LogoTitle {
+    position: relative;
+    font-family: var(--font-theme-primary);
+    color: var(--color-cave);
+    top: 15px;
+    pointer-events: none;
+}

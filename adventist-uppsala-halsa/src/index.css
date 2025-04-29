@@ -20,6 +20,7 @@ code {
 :root {
   --color-theme-primary: #3B7B88;
   --color-theme-secondary: #f9b000;
+  --color-cave: #255760; /* matching the png "cave" logo */
   --color-text-title: #373635;
   --color-text-paragraph: #7c786f;
   --color-wallpaper: #F7F5F0;
