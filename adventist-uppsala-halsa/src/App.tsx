@@ -1,6 +1,6 @@
-import React from 'react';
 import Styles from './App.module.css';
 import Logo from "./assets/logos/adventist-symbol-cave.png";
+import Footer from './components/Footer/Footer';
 
 const App = () => {
 
@@ -15,8 +15,8 @@ const App = () => {
         <h1>Main</h1>
       </main>
 
-      <footer className={Styles.FooterContainer}>
-        <h1>Footer</h1>
+      <footer className={Styles.FooterContainer} data-testid="footer">
+        <Footer />
       </footer>
 
     </div>

@@ -26,5 +26,5 @@ test('renders the main section', () => {
 
 test('renders the footer', () => {
   render(<App />);
-  expect(screen.getByText(/footer/i)).toBeInTheDocument();
+  expect(screen.getByTestId('footer')).toBeInTheDocument();
 });
