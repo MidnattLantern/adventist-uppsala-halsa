@@ -1,14 +1,13 @@
 import Styles from './App.module.css';
-import Logo from "./assets/logos/adventist-symbol-cave.png";
 import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
 
 const App = () => {
 
   return (
     <div className={Styles.AppContainer} data-testid="app-container">
-      <header className={Styles.HeaderContainer}>
-        <img className={Styles.Logo} src={Logo} alt="logo"/>
-        <h1>Header</h1>
+      <header className={Styles.HeaderContainer} data-testid="header">
+        <Header />
       </header>
 
       <main className={Styles.MainContainer}>

@@ -9,15 +9,9 @@ test('renders the app container', () => {
 
 test('renders the header text', () => {
   render(<App />);
-  const headerElement = screen.getByText(/header/i);
-  expect(headerElement).toBeInTheDocument();
+  expect(screen.getByTestId('header')).toBeInTheDocument();
 });
 
-test('renders the logo image', () => {
-  render(<App />);
-  const logo = screen.getByAltText(/logo/i);
-  expect(logo).toBeInTheDocument();
-});
 
 test('renders the main section', () => {
   render(<App />);
