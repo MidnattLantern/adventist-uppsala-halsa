@@ -43,7 +43,6 @@ Merriweather: https://fonts.google.com/specimen/Merriweather/license?query=Merri
 Organization logo: https://www.adventist.design/downloads/logo/ <br/>
 Favicon and general assets: Alma Isaksson <br/>
 
-
 Fonts, assets, colors: How to use
 ===
 Fonts:
