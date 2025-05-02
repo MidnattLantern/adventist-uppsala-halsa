@@ -69,7 +69,17 @@ Respective fonts can be used as usual in CSS files, but there are CSS variable f
 ```
 
 Colors:
+---
 All the colors used across the project are established as a variable inside index.css because the naming makes for good self-documentation. It is encouraged to use for instance `color: var(--color-theme-primary)` rather than `color: #3B7B88`.
+
+Icons:
+---
+All the SVG icons are stored inside the vector-icons directory. <br/>
+Notes about setting up and importing SVG: <br/>
+1. This is a CRA project, SVGR is built in. Type `import { ReactComponent as (YourIconComponentName) } from "../../assets/vector-icons/some-vector-icon.svg";` replace "YourIconComponentName" and "some-vector-icon.svg" with actual names. 
+2. The directory cannot be named just "icons", that's why the directory is named "vector-icons". 
+3. Unlike Vite, CRA cannot handle certain XML elements. It may be necessary to clean up XML imports on each SVG file manually by opening it up as text and delete the following XML attributes: `xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"`.
+4. Make sure the SVG file itself does not have any style attributes. Styles such as fill are established in a CSS file.
 
 
 Responsiveness
@@ -87,6 +97,11 @@ Regarding responsiveness, App.tsx determines the dimensions of the header, main 
 Components
 ===
 Inside the components directory, there are folders/ directories for each component. They come with a JSX file (written in TypeScript), a module.css file and a test file. Each component are wrapped in a ComponentContainer div element.
+
+Header
+---
+Logo: Appearing at the top right of the page, displaying the logo of the organization. Pressing the logo will take the user to the organization's main website.
+Search bar: Appearing fixed at the bottom right for phone, and at the header for desktop, the search bar allows the user to find specific information conveniently. It's automatically collapses in phone view when not used to save space, but always expanded on desktop.
 
 Manual Testing
 ===

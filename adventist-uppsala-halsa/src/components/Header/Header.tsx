@@ -1,5 +1,7 @@
 import Styles from "./Header.module.css";
 import Icon from "../../assets/logos/adventist-symbol-cave.png";
+import { ReactComponent as SearchIcon } from "../../assets/vector-icons/search-icon.svg"; //prebuilt margins
+import { useState, useRef } from "react";
 
 const Header = () => {
     const Logo = () => {
@@ -10,9 +12,33 @@ const Header = () => {
             </a>
         )
     };
+
+    // Fixed on bottom right for phone, Stay on header for desktop.
+    // Always collapsed for desktop.
+    // Automatically focus and blur input for desktop, find "Comment to disable autofocus".
     const SearchBar = () => {
+        const [inputText, setInputText] = useState<string>("");
+        const inputRef = useRef<HTMLInputElement>(null);
+        const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+            setInputText(event.target.value);
+        };
         return(
-            <input className={Styles.SearchBar} type="text" id="search-bar" name="search-bar" placeholder="Sök..."/>
+            <div
+            className={`${Styles.SearchBar}`}
+            onMouseEnter={() => inputRef.current?.focus()} // Comment to disable autofocus
+            onMouseLeave={() => inputRef.current?.blur()} // Comment to disable autofocus
+            >
+                <SearchIcon className={Styles.SearchIcon}/>
+                <input
+                className={`${Styles.SearchInputField}`}
+                onChange={handleInputChange}
+                value={inputText}
+                type="text" 
+                id="search-bar"
+                name="search-bar"
+                ref={inputRef}
+                />
+            </div>
         )
     };
 

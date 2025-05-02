@@ -40,14 +40,53 @@
 }
 
 .SearchBar {
-    position: absolute;
+    position: fixed;
     display: flex;
+    justify-content: center;
+    align-items: center;
     right: 15px;
-    width: 250px;
-    border-radius: 30px;
-    border: 2px solid var(--color-shadow);
-    padding: 10px;
+    bottom: 50px;
 }
-.SearchBar:active {
-    border: 2px solid var(--color-theme);
+.SearchInputField {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 50px;
+    border: 2px solid var(--color-shadow);
+    background-color: var(--color-white);
+    color: rgba(0,0,0,0);
+    box-shadow: 0px 2.5px 2.5px var(--color-shadow);
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 0px;
+    transition: all 0.25s ease;
+}
+.SearchInputField:focus,
+.SearchInputField:hover {
+    width: 250px;
+    padding-left: 15px;
+    color: var(--color-text-paragraph);
+}
+.SearchIcon {
+    position: absolute;
+    right: 0px;
+    width: auto;
+    height: 100%;
+    pointer-events: none;
+    fill: var(--color-text-paragraph);
+}
+
+@media (min-width: 768px) {
+    .SearchBar {
+        position: absolute;
+        right: 0px;
+        bottom: 15px;
+    }
+    .SearchInputField {
+        width: 250px;
+        padding-left: 15px;
+        color: var(--color-text-paragraph);
+    }
 }
