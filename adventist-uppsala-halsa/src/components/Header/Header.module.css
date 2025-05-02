@@ -1,8 +1,10 @@
 .HeaderComponentContainer {
+    position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
+    width: 100%;
 }
 
 .Logo {
@@ -35,4 +37,17 @@
     color: var(--color-cave);
     top: 15px;
     pointer-events: none;
+}
+
+.SearchBar {
+    position: absolute;
+    display: flex;
+    right: 15px;
+    width: 250px;
+    border-radius: 30px;
+    border: 2px solid var(--color-shadow);
+    padding: 10px;
+}
+.SearchBar:active {
+    border: 2px solid var(--color-theme);
 }

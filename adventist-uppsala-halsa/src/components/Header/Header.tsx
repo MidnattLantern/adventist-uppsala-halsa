@@ -9,11 +9,17 @@ const Header = () => {
                 <h1 className={Styles.LogoTitle}>Adventkyrkan</h1>
             </a>
         )
-    }
+    };
+    const SearchBar = () => {
+        return(
+            <input className={Styles.SearchBar} type="text" id="search-bar" name="search-bar" placeholder="Sök..."/>
+        )
+    };
 
     return(
         <div className={Styles.HeaderComponentContainer}>
             <Logo />
+            <SearchBar />
         </div>
     )
 };
