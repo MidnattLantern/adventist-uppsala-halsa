@@ -1,6 +1,7 @@
 import Styles from './App.module.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import EightHealthKeysWrapper from './pages/EightHealthKeys/EightHealthKeysWrapper';
 
 const App = () => {
 
@@ -11,7 +12,7 @@ const App = () => {
       </header>
 
       <main className={Styles.MainContainer}>
-        <h1>Main</h1>
+        <EightHealthKeysWrapper />
       </main>
 
       <footer className={Styles.FooterContainer} data-testid="footer">
