@@ -19,15 +19,22 @@ code {
 /* theme variables */
 :root {
   --color-theme-primary: #3B7B88;
+  --color-theme-primary-light: #7cb1bc;
   --color-theme-secondary: #f9b000;
+  --color-theme-secondary-light: rgb(245, 215, 175);
   --color-cave: #255760; /* matching the png "cave" logo */
   --color-text-title: #373635;
   --color-text-paragraph: #7c786f;
   --color-wallpaper: #F7F5F0;
   --color-white: #ffffff;
+  --color-white-transparent: rgba(250, 250, 250, 0.5);
+  --color-dark: rgb(45, 50, 55);
+  --color-dark-transparent: rgba(45, 50, 55, 0.5);
   --color-footer: #a29e93;
   --color-footer-link: #d6d1c2;
   --color-copyright: #7c786f;
+  --color-dark-background: rgb(50,50,50);
+  --color-dark-background-transparent: rgba(10,10,10,0.5);
   --color-shadow: rgba(0,0,0,0.25);
 
   --font-theme-primary: "Merriweather", serif;

@@ -39,15 +39,16 @@ npm run deploy
 ```
 
 
-Fonts and assets: Credits
+Fonts and assets - Credits
 ===
 - Montserrat: https://fonts.google.com/specimen/Montserrat/license
 - Merriweather: https://fonts.google.com/specimen/Merriweather/license?query=Merriweather
 - Organization logo: https://www.adventist.design/downloads/logo/
+- Stock photos: unsplash.com https://unsplash.com/license 
 - Favicon and general assets: Alma Isaksson
 
 
-Fonts, assets, colors: How to use
+Fonts, assets, colors - How to use
 ===
 
 Fonts:
@@ -86,6 +87,10 @@ Icons (Assets):
 3. Unlike Vite, CRA cannot handle certain XML elements. It may be necessary to clean up XML imports on each SVG file manually by opening it up as text and delete the following XML attributes: `xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"`.
 4. Make sure the SVG file itself does not have any style attributes. Styles such as fill are established in a CSS file.
 
+Images
+---
+- This project avoids non-english characters for compatibility reasons. Å Ä and Ö are replaced with A and O. Meaning images for purposes such as "återhämtning" will be called "aterhamtning" across the directories and files.
+
 
 Pages:
 ===
@@ -101,6 +106,8 @@ Pages:
 
 EightHealthKeys
 ---
+- Each point has a card. Designed for phone view first hand, expanding to desktop second. The height use vh as css height declarations to fit the card within any device.
+- Each point card has a title, a collapse button, a photography, and a link crediting the photographer. Collapsing will cover the image with text.
 
 
 Responsiveness
