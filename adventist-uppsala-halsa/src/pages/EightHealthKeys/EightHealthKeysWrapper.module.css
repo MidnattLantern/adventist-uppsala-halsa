@@ -11,11 +11,10 @@
     justify-content: center;
     align-items: baseline;
     width: 350px;
-    height: 90vh;
+    height: 80vh;
     overflow: hidden;
     box-shadow: 0px 5px 5px var(--color-shadow);
     border-radius: 10px;
-    border: 2px solid var(--color-white);
 }
 
 .WaterCardBackgroundImage {
@@ -27,16 +26,6 @@
     pointer-events: none;
 }
 
-.WaterImageAppearance {
-    position: absolute;
-    bottom: 50px;
-    width: calc(100% - 20px);
-    height: calc(90vh - 260px);
-    border-radius: 5px;
-    object-fit: cover;
-    box-shadow: inset 0px 0px 10px var(--color-shadow);
-}
-
 .ContentCardContainer {
     margin-top: 10px;
     position: absolute;
@@ -45,7 +34,7 @@
     justify-content: baseline;
     align-items: center;
     width: calc(100% - 20px);
-    height: 190px;
+    height: 70px;
     background-color: var(--color-dark-transparent);
     backdrop-filter: blur(20px);
     transition: all 0.5s ease;
@@ -96,27 +85,4 @@
 }
 .PhotoCreditsLink:hover {
     text-decoration: underline;
-}
-
-.CollapseButton {
-    width: 150px;
-    height: 40px;
-    border-radius: 20px;
-    color: var(--color-white);
-    font-family: var(--font-theme-secondary);
-    font-weight: 550;
-    font-size: 17.5px;
-    text-shadow: 0px 1px 1px var(--color-text-title);
-    border: 1.5px solid var(--color-white);
-    background-color: rgba(0,0,0,0);
-    box-shadow: inset 0px 0px 5px var(--color-shadow);
-    margin-top: 15px;
-    transition: all 0.15s ease;
-}
-.CollapseButton:hover {
-    color: var(--color-theme-secondary-light);
-    border-color: var(--color-theme-secondary-light);
-}
-.CollapseButton:active {
-    box-shadow: inset 0px 0px 15px var(--color-shadow);
 }

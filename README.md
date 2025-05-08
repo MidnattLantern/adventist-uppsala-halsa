@@ -126,13 +126,19 @@ Regarding responsiveness, App.tsx determines the dimensions of the header, main 
 
 Components
 ===
-Inside the components directory, there are folders/ directories for each component. They come with a JSX file (written in TypeScript), a module.css file and a test file. Each component are wrapped in a ComponentContainer div element. <br/>
-There is no strict naming convention for the folders/ directories. @MidnattLantern use PascalCase.
+- Inside the components directory, there are folders/ directories for each component. They come with a JSX file (written in TypeScript), a module.css file and a test file. Each component are wrapped in a ComponentContainer div element.
+- There is no strict naming convention for the folders/ directories. @MidnattLantern use PascalCase.
 
 Header
 ---
-Logo: Appearing at the top right of the page, displaying the logo of the organization. Pressing the logo will take the user to the organization's main website.
-Search bar: Appearing fixed at the bottom right for phone, and at the header for desktop, the search bar allows the user to find specific information conveniently. It's automatically collapses in phone view when not used to save space, but always expanded on desktop.
+- Logo: Appearing at the top right of the page, displaying the logo of the organization. Pressing the logo will take the user to the organization's main website.
+- Search bar: Appearing fixed at the bottom right for phone, and at the header for desktop, the search bar allows the user to find specific information conveniently. It's automatically collapses in phone view when not used to save space, but always expanded on desktop.
+
+ClickableImage
+---
+- Since the project is designed with a mobile-first approach, ClickableImage is intended to take full advantage of the limited screen real estate by making any image interactive.
+- This component is a custom element that requires an image link (src), and optionally accepts button text and an onClick behavior. Its width and height are flexible within the boundaries of its parent container.
+- The button text is always visible on smaller screens, but remains hidden on larger screens unless the user hovers. While it is fully functional across all screen sizes for consistency, it is recommended to place buttons outside the image on larger screens when space permits.
 
 
 Manual Testing
