@@ -106,8 +106,9 @@ Pages:
 
 EightHealthKeys
 ---
-- Each point has a card. Designed for phone view first hand, expanding to desktop second. The height use vh as css height declarations to fit the card within any device.
-- Each point card has a title, a collapse button, a photography, and a link crediting the photographer. Collapsing will cover the image with text.
+- Each point is presented as a card, designed primarily for phone viewing and scaled up for desktop. The height uses `vh` units to ensure each card fits within any device screen.
+- Each health key card includes a title, a collapse button, a photograph, and a photographer credit link. When collapsed, the image is covered by text.
+- Collapsing a health key should feel smooth and not disrupt the user experience. To achieve this, the content is placed inside a scrollable `<div>` with a fixed `vh` height, bordered by "bezel areas"—similar to the design of pre-iPhone X models. This means the content scrolls within its own window, while users can also scroll the entire page by touching the top or bottom bezel areas if they wish to move on without having to finish the entire health key paragraph.
 
 
 Responsiveness
