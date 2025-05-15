@@ -125,8 +125,9 @@ App.tsx
 Regarding responsiveness, App.tsx determines the dimensions of the header, main and footer. Each respective component has no size limit and are restricted by App.tsx
 
 
-Components
+Components (global)
 ===
+- Not to be confused with local components that may exist in a pages directory.
 - Inside the components directory, there are folders/ directories for each component. They come with a JSX file (written in TypeScript), a module.css file and a test file. Each component are wrapped in a ComponentContainer div element.
 - There is no strict naming convention for the folders/ directories. @MidnattLantern use PascalCase.
 
@@ -140,6 +141,15 @@ ClickableImage
 - Since the project is designed with a mobile-first approach, ClickableImage is intended to take full advantage of the limited screen real estate by making any image interactive.
 - This component is a custom element that requires an image link (src), and optionally accepts button text and an onClick behavior. Its width and height are flexible within the boundaries of its parent container.
 - The button text is always visible on smaller screens, but remains hidden on larger screens unless the user hovers. While it is fully functional across all screen sizes for consistency, it is recommended to place buttons outside the image on larger screens when space permits.
+
+
+Contexts
+===
+
+Viewport context
+---
+- The viewport context enable an easier way to use viewport dimensions such as width for JSX logic. The context provider is wrapped around the <App /> inside index.tsx
+- To use in a JSX/ TSX file, with width as an example, import: `import { useViewPortContext } from "./relative-path/contexts/useViewportContext";` then `const { viewportWidth } = useViewPortContext();` inside a const and retrieve the wievport width with `viewportWidth` as a number.
 
 
 Manual Testing
@@ -156,3 +166,6 @@ Other
 ===
 Readme image:
 ![Alt text](relative/path/to/image.png)
+
+force rename files for unix (Linux, MacOS):
+mv oldName newName

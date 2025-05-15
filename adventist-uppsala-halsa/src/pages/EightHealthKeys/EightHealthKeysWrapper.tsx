@@ -1,24 +1,21 @@
 // Work in progress - Alma
-import Styles from "./EightHealthKeysWrapper.module.css";
-import WaterImage from "../../assets/images/unsplash-nicolas-ruiz-vatten.jpg";
 import { ReactNode, useState } from "react";
+import WaterImage from "../../assets/images/unsplash-nicolas-ruiz-vatten.jpg";
 import ClickableImage from "../../components/ClickableImage/ClickableImage";
+import { useViewPortContext } from "../../contexts/useViewportContext";
+import HealthList from "./components/HealthList";
+import Styles from "./EightHealthKeysWrapper.module.css";
 
 const EightHealthKeysWrapper = () => {
-    const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
+    const [isExpanded, setIsExpanded] = useState<boolean>(false);
+    const { viewportWidth } = useViewPortContext();
 
-    const CollapsedContent = () => {
+    const ExpandedContent = () => {
         // CP: Custom Paragraph
         // alternative to <p> so that you don't have to declare className for every single <p> element
         const CP = ({children} : { children?: ReactNode }) => {
             return(<p className={Styles.CardParagraph}>{children}</p>)
         };
-        //CHR: Custom Header Row
-        // alternative to <hr/> so that you don't have to declare className for every single <hr/> element
-        const CHR = () => {
-            return(<hr className={Styles.HeaderRow}/>)
-        };
-
         return(
             <>
             <div className={Styles.ContentParagraphContainer}>
@@ -36,10 +33,10 @@ const EightHealthKeysWrapper = () => {
 
                 <CP>Vatten kan också användas som behandling i form av is, vattenånga, ångbastu, fotbad, varma och kalla omslag, samt inpackningar, med goda resultat.</CP>
             </div>
-            <div className={Styles.CollapseButtonContainer}>
+            <div className={Styles.ExpandButtonContainer}>
                 <button
-                className={Styles.CollapseButton}
-                onClick={() => {setIsCollapsed(!isCollapsed)}}
+                className={Styles.ExpandButton}
+                onClick={() => {setIsExpanded(false)}}
                 >
                 {"Stäng"}
                 </button>
@@ -48,50 +45,41 @@ const EightHealthKeysWrapper = () => {
         )
     };
 
+
+
     return(
         <div className={Styles.EightHealthKeysWrapperComponent}>
-            <ul>
-                <li>
-                    {"Vatten"}
-                </li>
-                <li>
-                    {"Avhållsamhet"}
-                </li>
-                <li>
-                    {"Rörelse"}
-                </li>
-                <li>
-                    {"Skolsken"}
-                </li>
-                <li>
-                    {"Återhämtning"}
-                </li>
-                <li>
-                    {"Gudsförtröstan"}
-                </li>
-                <li>
-                    O<sub>2</sub> {"(syre)"}
-                </li>
-                <li>
-                    {"Diet"}
-                </li>
-            </ul>
+            <HealthList />
 
             <div className={Styles.WaterCardContainer}>
+            
                 <img className={Styles.WaterCardBackgroundImage} src={WaterImage} alt={""}/>
-                <ClickableImage onClick={() => {setIsCollapsed(true)}} src={WaterImage}>Läs mer</ClickableImage>
-                <div className={`${Styles.ContentCardContainer} ${isCollapsed && Styles.CollapsedContentCardContainer}`}>
-                    <h1 className={Styles.WaterCardHeader}>{"Vatten"}</h1>
-                    {isCollapsed && <CollapsedContent/>}
-                </div>
-                <p className={Styles.PhotoCredits}>Foto av <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href="https://unsplash.com/@nicoruiz01981?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nicolas Ruiz</a> från <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href="https://unsplash.com/photos/clear-drinking-glass-with-water-aFbow3dw8QA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
-            </div>
+                <div className={Styles.HealthCardView}>
+                    <div className={`${Styles.ContentCardContainer} ${isExpanded && Styles.ExpandedContentCardContainer}`}>
+                        {viewportWidth > 768 && <button className={Styles.ButtonFrame} onClick={() => {setIsExpanded(!isExpanded)}}><p>{isExpanded ? "Stäng" : "Läs mer"}</p></button>}
+                        <h1 className={Styles.WaterCardHeader}>{"Vatten"}</h1>
+                        {isExpanded && viewportWidth < 768 && <ExpandedContent/>}
+                        {viewportWidth > 768 && <p className={Styles.LargeViewPhotoCredits}>Foto av <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href="https://unsplash.com/@nicoruiz01981?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nicolas Ruiz</a> från <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href="https://unsplash.com/photos/clear-drinking-glass-with-water-aFbow3dw8QA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>}
+                    </div>
 
-            <button
-            onClick={() => {setIsCollapsed(!isCollapsed)}}
-            >
-            {"toggle"}
-            </button>
+                    <div className={Styles.ImageAndContentContainer}>
+
+                        {viewportWidth > 768 && 
+                            <div className={`${Styles.Test} ${isExpanded && Styles.ExpandedTest}`}>
+                                <ExpandedContent />
+                            </div>
+                        }
+                        <ClickableImage onClick={() => {setIsExpanded(!isExpanded)}} src={WaterImage}>Läs mer</ClickableImage>
+
+                    </div>
+                </div>
+
+                {viewportWidth < 768 && <>
+                    <p className={Styles.LargeViewPhotoCredits}>Foto av <a className={Styles.LargeViewPhotoCreditsLink} target="_blank" rel="noreferrer" href="https://unsplash.com/@nicoruiz01981?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nicolas Ruiz</a> Från <a className={Styles.LargeViewPhotoCreditsLink} target="_blank" rel="noreferrer" href="https://unsplash.com/photos/clear-drinking-glass-with-water-aFbow3dw8QA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+                </>}
+
+            </div>
+            <p>{viewportWidth}</p>
 
         </div>
     )

@@ -19,7 +19,7 @@ code {
 /* theme variables */
 :root {
   --color-theme-primary: #3B7B88;
-  --color-theme-primary-light: #7cb1bc;
+  --color-theme-primary-light: #afe3ed;
   --color-theme-secondary: #f9b000;
   --color-theme-secondary-light: rgb(245, 215, 175);
   --color-cave: #255760; /* matching the png "cave" logo */
