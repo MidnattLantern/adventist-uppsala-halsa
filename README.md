@@ -107,9 +107,13 @@ Pages:
 EightHealthKeys
 ---
 - Each point is presented as a card, designed primarily for phone viewing and scaled up for desktop. The height uses `vh` units to ensure each card fits within any device screen.
-- Each health key card includes a title, a collapse button, a photograph, and a photographer credit link. When collapsed, the image is covered by text.
-- Collapsing a health key should feel smooth and not disrupt the user experience. To achieve this, the content is placed inside a scrollable `<div>` with a fixed `vh` height, bordered by "bezel areas"—similar to the design of pre-iPhone X models. This means the content scrolls within its own window, while users can also scroll the entire page by touching the top or bottom bezel areas if they wish to move on without having to finish the entire health key paragraph.
-
+- Each health key card includes a title, a Expand button, a photograph, and a photographer credit link. When Expandd, the image is covered by text.
+- Expanding a health key should feel smooth and not disrupt the user experience. To achieve this, the content is placed inside a scrollable `<div>` with a fixed `vh` height, bordered by "bezel areas"—similar to the design of pre-iPhone X models. This means the content scrolls within its own window, while users can also scroll the entire page by touching the top or bottom bezel areas if they wish to move on without having to finish the entire health key paragraph.
+- The purpose of hiding the text inside an expand button serves two purposes:
+	1.	Optimizing the limited real estate of a phone while keeping the app feel fast to interact with.
+	2.	Keeping the reader hooked once they click the expand button, as it’s easy to scroll past text that’s already in front of you, but when you make the effort to click the expand button, scrolling past would feel like wasted effort.
+- This follows a similar philosophy to how Apple Stores adjust MacBooks at an awkward angle on purpose—since the guest is unlikely to adjust a MacBook and immediately walk away.
+- Each health key card has two different components specific to the viewport width. Because the layout and element structure are very different depending on the viewport, it was easier to split them into two. Combining the two into one unified component is done in the wrapper parent, which also tracks the viewport.
 
 Responsiveness
 ===
@@ -134,7 +138,7 @@ Components (global)
 Header
 ---
 - Logo: Appearing at the top right of the page, displaying the logo of the organization. Pressing the logo will take the user to the organization's main website.
-- Search bar: Appearing fixed at the bottom right for phone, and at the header for desktop, the search bar allows the user to find specific information conveniently. It's automatically collapses in phone view when not used to save space, but always expanded on desktop.
+- Search bar: Appearing fixed at the bottom right for phone, and at the header for desktop, the search bar allows the user to find specific information conveniently. It's automatically Expands in phone view when not used to save space, but always expanded on desktop.
 
 ClickableImage
 ---
