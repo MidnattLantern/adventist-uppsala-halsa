@@ -3,6 +3,31 @@ Live link: https://midnattlantern.github.io/adventist-uppsala-halsa/
 The project Adventist Uppsala Hälsa (“AUH” for short) is a commission for Uppsala’s Adventist community, aiming to provide health-related advice and guidelines according to the Seventh-day Adventist values. The aim is to inform people about how they can improve their quality of life through habits and food/drinks.
 
 
+Setting Up the Project in Your IDE:
+===
+1. Set up a local directory and clone the repository:
+```zsh
+git clone https://github.com/MidnattLantern/adventist-uppsala-halsa.git
+```
+2. Due to the directory structure of this project, you will need to run the following command _twice_ to navigate to where the `package.json` file is located:
+```zsh
+cd ./adventist-uppsala-halsa
+cd ./adventist-uppsala-halsa
+```
+3. Install the dependencies:
+```zsh
+npm install
+```
+4. To start the application, run:
+```zsh
+npm start
+```
+Or, if you need to debug on a second device connected to the same network:
+```zsh
+npm start -- --host
+```
+
+
 Setting up React
 ===
 AUH is built using the React framework with NPM and is written in TypeScript.
