@@ -117,16 +117,22 @@ EightHealthKeys
 
 Responsiveness
 ===
-The project is designed with a mobile-first approach. CSS files use three @media queries to adjust for larger screens by detecting min-width.
+- The project is designed with a mobile-first approach. CSS files use three @media queries to adjust for larger screens by detecting min-width.
 1. Small: default
 2. Medium: @media (min-width: 480px)
 3. Large: @media (min-width: 768px)
 4. X-Large: @media (min-width: 1280px)
 
 
+Search engine
+===
+- The search engine is entirely run on client-end. It is run by Fuse.js.
+- Any content that can be found trough Fuse.js are stored as .json files under teh content directory.
+
+
 App.tsx
 ===
-Regarding responsiveness, App.tsx determines the dimensions of the header, main and footer. Each respective component has no size limit and are restricted by App.tsx
+- Regarding responsiveness, App.tsx determines the dimensions of the header, main and footer. Each respective component has no size limit and are restricted by App.tsx
 
 
 Components (global)
@@ -173,3 +179,6 @@ Readme image:
 
 force rename files for unix (Linux, MacOS):
 mv oldName newName
+
+There is no search functionality yet, a fututre iteration of fuse.js is likely to happen
+https://www.fusejs.io/

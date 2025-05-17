@@ -5,19 +5,31 @@ import LargeHealthKeyCard from "./components/HealthKeyCard/LargeHealthKeyCard";
 import PhoneHealthKeyCard from "./components/HealthKeyCard/PhoneHealthKeyCard";
 import { useViewPortContext } from "../../contexts/useViewportContext";
 import HealthList from "./components/HealthList/HealthList";
+import { useState } from "react";
+import waterContent from "../../content/healthKeys/water.json";
 
 const EightHealthKeysWrapper = () => {
-        const { viewportWidth } = useViewPortContext();
-        const VIEWPORT_BREAKPOINT = 768;
+    const { viewportWidth } = useViewPortContext();
+    const VIEWPORT_BREAKPOINT = 768;
+    const [waterExpanded, setWaterExpanded] = useState<boolean>(false); // "Vatten"
 
-    return(
+    return (
         <div className={Styles.EightHealthKeysWrapperComponent}>
             <HealthList />
             {viewportWidth < VIEWPORT_BREAKPOINT ?
-            <PhoneHealthKeyCard />
+            <PhoneHealthKeyCard
+                contentData={waterContent}
+                isExpanded={waterExpanded}
+                setIsExpanded={setWaterExpanded}
+            />
             :
-            <LargeHealthKeyCard />
+            <LargeHealthKeyCard
+                contentData={waterContent}
+                isExpanded={waterExpanded}
+                setIsExpanded={setWaterExpanded}
+            />
             }
+
         </div>
     )
 };

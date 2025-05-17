@@ -46,6 +46,10 @@
     align-items: center;
     right: 15px;
     bottom: 50px;
+
+        /* search bar is temporarily disabled */
+        opacity: 0;
+        pointer-events: none;
 }
 .SearchInputField {
     display: flex;
