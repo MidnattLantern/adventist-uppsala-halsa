@@ -1,0 +1,28 @@
+{
+    "id": "nutrition",
+    "title": "Diet",
+    "photoCredit": {
+        "name": "Victoria Shes",
+        "nameURL": "https://unsplash.com/@victoriakosmo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+        "source": "Unsplash",
+        "sourceURL": "https://unsplash.com/photos/cooked-food-wSh0Exrb62g?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+    },
+    "paragraphs": [
+        "Varje organ i kroppen behöver sin del av näringsämnen.",
+        "Ett bra kosthåll består till större del av fullkornsprodukter, grönsaker, baljväxter, bär, frukt och nötter.",
+        "En övergång av dieten kan göras gradvis. Prova dig fram, och gör det som din kropp mår bra av.",
+        "Undvik processad mat och socker. Socker göder cancer.",
+        "Ät mer till frukost, och mindre till kvällen. Var snäll mot din mage, slopa mellanmålen. Det bör gå 5-6 timmar mellan måltiderna.",
+        "Ät långsamt, och med måtta. Sista måltiden borde intas 3-4 timmar innan sänggåendet.",
+        "Effekterna av fasta är många och genomgripande:",
+        "Periodisk fasta: 6 timmar av ätande, tex frukost kl. 7 och lunch kl 13, följt av 18 timmar fasta, repeteras dag för dag.",
+        "Terapeutisk fasta: Avstå från kaloriintag 2-3 dagar, ibland ännu längre. Under fastan dricker du vatten, örtte, rött te eller buljong.",
+        "Några effekter av fasta:",
+        "Avgiftning",
+        "Verkar helande för kroppen",
+        "Motverkar åldrande",
+        "Reparerar nervceller",
+        "Motverkar cancer",
+        "Återställer immunförsvaret"
+    ]
+}
