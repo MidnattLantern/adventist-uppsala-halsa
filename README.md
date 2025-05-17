@@ -131,9 +131,13 @@ Pages:
 
 EightHealthKeys
 ---
-- Each point is presented as a card, designed primarily for phone viewing and scaled up for desktop. The height uses `vh` units to ensure each card fits within any device screen.
-- Each health key card includes a title, a Expand button, a photograph, and a photographer credit link. When Expandd, the image is covered by text.
-- Expanding a health key should feel smooth and not disrupt the user experience. To achieve this, the content is placed inside a scrollable `<div>` with a fixed `vh` height, bordered by "bezel areas"—similar to the design of pre-iPhone X models. This means the content scrolls within its own window, while users can also scroll the entire page by touching the top or bottom bezel areas if they wish to move on without having to finish the entire health key paragraph.
+- This page is featured by a parent wrapper "EightHealthKeysWrapper.tsx" due to its complexity.
+- Each health key (i.e water and exersice) is presented as a card. They consist of reusable children that accepts certain props and arguments. The parent wrapper provide the children with props and data such as states and .json references:
+    1. Content data, importing .json files for each health key theme from the src/content/healthKeys/(corresponding theme).json directory.
+    2. Expanded states for each health key theme, stored by the parent wrapper so that the expanded state does not reset each time the user resize the viewport width.
+- The children will automatically write itself using the .json import from its parent. (contentData)
+- Each health key card includes a title, an expand button, a photograph, and a photographer credit link. When Expandd, the image is covered by text.
+-  Expanding a health key should feel smooth and not disrupt the user experience. To achieve this, the content is placed inside a scrollable `<div>` with a fixed `vh` height, bordered by "bezel areas"—similar to the design of pre-iPhone X models. This means the content scrolls within its own window, while users can also scroll the entire page by touching the top or bottom bezel areas if they wish to move on without having to finish the entire health key paragraph.
 - The purpose of hiding the text inside an expand button serves two purposes:
 	1.	Optimizing the limited real estate of a phone while keeping the app feel fast to interact with.
 	2.	Keeping the reader hooked once they click the expand button, as it’s easy to scroll past text that’s already in front of you, but when you make the effort to click the expand button, scrolling past would feel like wasted effort.
@@ -152,7 +156,7 @@ Responsiveness
 Search engine
 ===
 - The search engine is entirely run on client-end. It is run by Fuse.js.
-- Any content that can be found trough Fuse.js are stored as .json files under teh content directory.
+- Any content that can be found trough Fuse.js are stored as .json files under the content directory.
 
 
 App.tsx
