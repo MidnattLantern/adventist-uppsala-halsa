@@ -18,10 +18,12 @@ type HealthKeyContent = {
 };
 
 const LargeHealthKeyCard = ({
+    customTitle,
     contentData,
     isExpanded,
     setIsExpanded
 } : {
+    customTitle?: React.ReactNode, // optional prop designed because of "02 syre"
     contentData: HealthKeyContent;
     isExpanded: boolean;
     setIsExpanded: React.Dispatch<React.SetStateAction<boolean>>;
@@ -54,10 +56,19 @@ const LargeHealthKeyCard = ({
     };
     const PhotoCredits = () => {
         return (
-            <p className={Styles.PhotoCredits}>
-                {" Foto av "} <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.nameURL}>{contentData.photoCredit.name}</a>
-                {" Från "} <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.sourceURL}>{contentData.photoCredit.source}</a>
-            </p>
+            <div className={Styles.PhotoCreditsView}>
+                <p className={Styles.PhotoCredits}>
+                    {" Foto av "}
+                </p>
+                <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.nameURL}>{contentData.photoCredit.name}</a>
+
+                <br/><br/>
+
+                <p className={Styles.PhotoCredits}>
+                    {" Från "}
+                    <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.sourceURL}>{contentData.photoCredit.source}</a>
+                </p>
+            </div>
         )
     };
 
@@ -67,7 +78,11 @@ const LargeHealthKeyCard = ({
             <div className={Styles.HealthCardView}>
                 <div className={`${Styles.TitleAndContentContainer} ${isExpanded && Styles.ExpandedPhoneContentCardContainer}`}>
                     <button className={Styles.ButtonFrame} onClick={() => {setIsExpanded(!isExpanded)}}><p>{isExpanded ? "Stäng" : "Läs mer"}</p></button>
-                    <h1 className={Styles.WaterCardHeader}>{contentData.title}</h1>
+                    {customTitle ? (
+                        <div className={Styles.CardHeader}>{customTitle}</div>
+                    ) : (
+                        <h1 className={Styles.CardHeader}>{contentData.title}</h1>
+                    )}
                     <PhotoCredits />
                 </div>
                 <div className={Styles.ClickableImageContainer}>

@@ -143,6 +143,7 @@ EightHealthKeys
 	2.	Keeping the reader hooked once they click the expand button, as it’s easy to scroll past text that’s already in front of you, but when you make the effort to click the expand button, scrolling past would feel like wasted effort.
 - This follows a similar philosophy to how Apple Stores adjust MacBooks at an awkward angle on purpose—since the guest is unlikely to adjust a MacBook and immediately walk away.
 - Each health key card has two different components specific to the viewport width. Because the layout and element structure are very different depending on the viewport, it was easier to split them into two. Combining the two into one unified component is done in the wrapper parent, which also tracks the viewport.
+- Because each health key retrieve content as text from an external json file, the customTitle prop enables the developer to pass an optional custom element if regular plain text is not enough. This optional prop was created because the 2 in "<p>0<sub>2</sub></p>" need the <sub> tag, which json does not enable.
 
 Responsiveness
 ===

@@ -115,6 +115,7 @@ const EightHealthKeysWrapper = () => {
                 />
                 :
                 <LargeHealthKeyCard
+                    customTitle={<h1>0<sub>2</sub> syre</h1>}
                     contentData={airContent}
                     isExpanded={airExpanded}
                     setIsExpanded={setAirExpanded}

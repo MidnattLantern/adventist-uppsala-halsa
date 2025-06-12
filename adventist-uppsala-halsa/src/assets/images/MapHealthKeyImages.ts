@@ -1,6 +1,6 @@
 // Script that automatically locates images based by the id name, since .json files cannot store images
 import WaterImage from "./unsplash-nicolas-ruiz-water.jpg";
-import TemperanceImage from "./unsplash-tingey-injury-law-firm-temperance.jpg";
+import TemperanceImage from "./unsplash-karolina-kolodziejczak.jpg";
 import ExersiceImage from "./unsplash-martin-dalsgaard-exersice.jpg";
 import SunshineImage from "./unsplash-melissa-askew-sunshine.jpg";
 import RestImage from "./unsplash-shahovskaya-rest.jpg";

@@ -118,39 +118,44 @@
     height: calc(100% - 70px);
 }
 
-.WaterCardHeader {
+.CardHeader {
     color: var(--color-white);
     font-family: var(--font-theme-primary);
     text-shadow: 0px 2.5px 2.5px var(--color-text-title);
-    border-radius: 10px;
     margin: 15px;
     transition: all 0.25s ease;
     transform: rotate(-90deg);
+    width: 30vw;
+    text-align: center;
 }
 
-.PhotoCredits {
+.PhotoCreditsView {
     position: absolute;
+    transform: rotate(-90deg);
+    bottom: 60px;
+    width: 175px;
+}
+.PhotoCredits {
     color: var(--color-white);
     text-shadow: 0px 1px 1px var(--color-text-title);
     font-family: var(--font-theme-secondary);
-    font-weight: 550;
-    transform: rotate(-90deg);
-    width: 175px;
-    height: auto;
-    margin-top: 150px;
-    bottom: 60px;
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin: 0px;
 }
 .PhotoCreditsLink {
     color: var(--color-theme-primary-light);
     text-decoration: none;
     font-family: var(--font-theme-secondary);
-    font-weight: 550;
+    font-weight: 500;
+    font-size: 1.5vw;
 }
 .PhotoCreditsLink:hover {
     text-decoration: underline;
 }
 
 .ButtonFrame {
+    z-index: 1;
     position: absolute;
     top: 75px;
     display: flex;
