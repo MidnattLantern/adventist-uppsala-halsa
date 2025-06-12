@@ -1,0 +1,13 @@
+.HealthListView {
+    margin: 10px;
+    min-width: 350px;
+    width: 350px;
+    height: 40vh;
+}
+
+@media (min-width: 768px) {
+    .HealthListView {
+        min-width: 575px;
+        width: 575px;
+    }
+}

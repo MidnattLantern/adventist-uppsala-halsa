@@ -1,8 +1,15 @@
 .EightHealthKeysWrapperComponent {
+    /* replaced by Masonry
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: baseline end;
+    */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    gap: 1rem;
 }
 
 @media (min-width: 768px) {

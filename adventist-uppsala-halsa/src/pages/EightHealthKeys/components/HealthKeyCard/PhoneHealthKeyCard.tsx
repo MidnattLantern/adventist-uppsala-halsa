@@ -54,10 +54,14 @@ const PhoneHealthKeyCard = ({
     };
     const PhotoCredits = () => {
         return (
-            <p className={Styles.PhotoCredits}>
-                {" Foto av "} <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.nameURL}>{contentData.photoCredit.name}</a>
-                {" Från "} <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.sourceURL}>{contentData.photoCredit.source}</a>
-            </p>
+            <div className={Styles.PhotoCreditsView}>
+                <p className={Styles.PhotoCredits}>
+                    {" Foto av "} <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.nameURL}>{contentData.photoCredit.name}</a>
+                </p>
+                <p className={Styles.PhotoCredits}>
+                    {" Från "} <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.sourceURL}>{contentData.photoCredit.source}</a>
+                </p>
+            </div>
         )
     };
 

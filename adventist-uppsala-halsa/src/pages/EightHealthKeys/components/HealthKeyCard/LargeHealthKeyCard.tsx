@@ -1,4 +1,3 @@
-// work in progress -Alma
 import Styles from "./LargeHealthKeyCard.module.css";
 import ClickableImage from "../../../../components/ClickableImage/ClickableImage";
 import { MapHealthKeyImages } from "../../../../assets/images/MapHealthKeyImages";

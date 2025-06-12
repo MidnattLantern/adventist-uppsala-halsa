@@ -4,6 +4,9 @@ import PhoneHealthKeyCard from "./components/HealthKeyCard/PhoneHealthKeyCard";
 import HealthList from "./components/HealthList/HealthList";
 import { useViewPortContext } from "../../contexts/useViewportContext";
 import { useState } from "react";
+// @ts-ignore
+import Masonry from "react-masonry-css";
+import "../../styles/masonry.css";
 import waterContent from "../../content/healthKeys/water.json";
 import temperanceContent from "../../content/healthKeys/temperance.json";
 import exersiceContent from "../../content/healthKeys/exersice.json";
@@ -12,6 +15,11 @@ import restContent from "../../content/healthKeys/rest.json";
 import trustInGodContent from "../../content/healthKeys/trust-in-god.json";
 import airContent from "../../content/healthKeys/air.json";
 import nutritionContent from "../../content/healthKeys/nutrition.json";
+
+const breakpointColumnsObj = {
+  default: 2,
+  1280: 1
+};
 
 const EightHealthKeysWrapper = () => {
     const { viewportWidth } = useViewPortContext();
@@ -27,6 +35,12 @@ const EightHealthKeysWrapper = () => {
 
     return (
         <div className={Styles.EightHealthKeysWrapperComponent}>
+        <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+        >
+
             <HealthList />
 
             {viewportWidth < VIEWPORT_BREAKPOINT ?
@@ -134,6 +148,10 @@ const EightHealthKeysWrapper = () => {
                     setIsExpanded={setNutritionExpanded}
                 />
             }
+
+            <HealthList />
+
+            </Masonry>
 
         </div>
     )

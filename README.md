@@ -202,6 +202,16 @@ Unit Testing
 Each JSX file (aside from index.tsx) has a respective test.tsx file using Jest.
 
 
+Packages
+===
+masonry.js
+---
+- Displaying elements with varying height but fixed width directly underneath one another, rather than aligining according to a perfect grid, excluding empty spaces. Examples are Pinterest or Unsplash.
+```zsh
+npm install masonry-layout
+npm install react-masonry-css
+```
+
 Other
 ===
 Readme image:
