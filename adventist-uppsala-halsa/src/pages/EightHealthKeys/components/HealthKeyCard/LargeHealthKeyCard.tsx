@@ -61,7 +61,8 @@ const LargeHealthKeyCard = ({
                 </p>
                 <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.nameURL}>{contentData.photoCredit.name}</a>
 
-                <br/><br/>
+                <div style={{'margin': '8px'}} // <br/>
+                />
 
                 <p className={Styles.PhotoCredits}>
                     {" Från "}

@@ -126,7 +126,7 @@ Pages:
 ![pages-directory-example.png](./readme-images/pages-directory-example.png)
 - Seperating each major health section as pages enable the project to be flexible with how it wants to display, it could be a collapsable section or its different page. Note however because this is a static React project, it cannot use routing to display pages.
 - Each TSX file, parent and child has a <div> wrapper like: <div className={Styles.(Name)Container}> replace "Name" with the actual name. See image:
-![pages-div-wrapper-example-png](./readme-images/pages-div-wrapper-example.png)
+![pages-div-wrapper-example-png](./readme-images/pages-wrapper-example.png)
 - There is no strict naming convention for the folders/ directories. @MidnattLantern use PascalCase.
 
 EightHealthKeys
@@ -189,7 +189,7 @@ Contexts
 Viewport context
 ---
 - The viewport context enable an easier way to use viewport dimensions such as width for JSX logic. The context provider is wrapped around the <App /> inside index.tsx
-- To use in a JSX/ TSX file, with width as an example, import: `import { useViewPortContext } from "./relative-path/contexts/useViewportContext";` then `const { viewportWidth } = useViewPortContext();` inside a const and retrieve the wievport width with `viewportWidth` as a number.
+- To use in a JSX/ TSX file, with width as an example, import: `import { useViewPortContext } from "./relative-path/contexts/useViewportContext";` then `const { viewportWidth } = useViewPortContext();` inside a const and retrieve the viewport width with `viewportWidth` as a number.
 
 
 Manual Testing
@@ -199,8 +199,34 @@ The project was manually tested using an iPhone 13 mini and a web browser on a M
 
 Unit Testing
 ===
-Each JSX file (aside from index.tsx) has a respective test.tsx file using Jest.
+Some components has a test.tsx file using Jest.
 
+
+Playful grids using Masonry
+===
+- The app uses Masonry to align elements with consistent width but varying height underneath one another, eliminating whitespace that would typically appear through a css `flex-wrap: wrap;` styling.
+- Installing:
+```zsh
+npm install masonry-layout
+npm install react-masonry-css
+```
+- Any component that use this package has gotten its separate module.css file. Said component holds a `Masonry.module.css` file inside the same directory as the component's tsx, module.css and applicable test.tsx and local components directory. The Masonry style file is also designed for mobile first.
+- Import Masonry to the directory:
+```tsx
+// @ts-ignore
+import Masonry from "react-masonry-css";
+```
+- Wrap any elements that will use Masonry with/ inside <Masonry></Masonry>
+- The Masonry wrapper takes three arguments:
+1. breakpointCols telling Masonry how many columns there should be, with optional other columns for other viewport width. It operates on large screen first, keep that in mind, since this app is designed mobile first. Example:
+```tsx
+<Masonry
+breakpointCols={{
+    default: 3, 1000: 2, 400: 1
+}}>
+```
+2. className, optional but recommended to declare the width again, as it may not behave exactly like other elements.
+3. columnClassName, also optional but recommended for the same reasons as className, mainly for padding.
 
 Packages
 ===
@@ -211,6 +237,10 @@ masonry.js
 npm install masonry-layout
 npm install react-masonry-css
 ```
+
+fuse.js
+---
+- Client end search engine.
 
 Other
 ===
