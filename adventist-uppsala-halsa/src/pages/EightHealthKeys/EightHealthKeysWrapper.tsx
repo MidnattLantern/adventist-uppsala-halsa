@@ -39,8 +39,18 @@ const EightHealthKeysWrapper = () => {
         columnClassName={MasonryStyles.MasonryGridColumn}
         >
 
-        <HealthList />
+<HealthList
+  setWaterExpanded={setWaterExpanded}
+  setTemperanceExpanded={setTemperanceExpanded}
+  setExersiceExpanded={setExersiceExpanded}
+  setSunshineExpanded={setSunshineExpanded}
+  setRestExpanded={setRestExpanded}
+  setTrustInGodExpanded={setTrustInGodExpanded}
+  setAirExpanded={setAirExpanded}
+  setNutritionExpanded={setNutritionExpanded}
+/>
 
+            <div id="water">
             {viewportWidth < VIEWPORT_BREAKPOINT ?
                 <PhoneHealthKeyCard
                     contentData={waterContent}
@@ -54,6 +64,8 @@ const EightHealthKeysWrapper = () => {
                     setIsExpanded={setWaterExpanded}
                 />
             }
+            </div>
+            <div id="temperance">
             {viewportWidth < VIEWPORT_BREAKPOINT ?
                 <PhoneHealthKeyCard
                     contentData={temperanceContent}
@@ -67,6 +79,8 @@ const EightHealthKeysWrapper = () => {
                     setIsExpanded={setTemperanceExpanded}
                 />
             }
+            </div>
+            <div id="exersice">
             {viewportWidth < VIEWPORT_BREAKPOINT ?
                 <PhoneHealthKeyCard
                     contentData={exersiceContent}
@@ -80,6 +94,8 @@ const EightHealthKeysWrapper = () => {
                     setIsExpanded={setExersiceExpanded}
                 />
             }
+            </div>
+            <div id="sunshine">
             {viewportWidth < VIEWPORT_BREAKPOINT ?
                 <PhoneHealthKeyCard
                     contentData={sunshineContent}
@@ -93,6 +109,8 @@ const EightHealthKeysWrapper = () => {
                     setIsExpanded={setSunshineExpanded}
                 />
             }
+            </div>
+            <div id="rest">
             {viewportWidth < VIEWPORT_BREAKPOINT ?
                 <PhoneHealthKeyCard
                     contentData={restContent}
@@ -106,6 +124,8 @@ const EightHealthKeysWrapper = () => {
                     setIsExpanded={setRestExpanded}
                 />
             }
+            </div>
+            <div id="trust-in-god">
             {viewportWidth < VIEWPORT_BREAKPOINT ?
                 <PhoneHealthKeyCard
                     contentData={trustInGodContent}
@@ -119,6 +139,8 @@ const EightHealthKeysWrapper = () => {
                     setIsExpanded={setTrustInGodExpanded}
                 />
             }
+            </div>
+            <div id="air">
             {viewportWidth < VIEWPORT_BREAKPOINT ?
                 <PhoneHealthKeyCard
                     contentData={airContent}
@@ -133,6 +155,8 @@ const EightHealthKeysWrapper = () => {
                     setIsExpanded={setAirExpanded}
                 />
             }
+            </div>
+            <div id="nurtrition">
             {viewportWidth < VIEWPORT_BREAKPOINT ?
                 <PhoneHealthKeyCard
                     contentData={nutritionContent}
@@ -146,8 +170,18 @@ const EightHealthKeysWrapper = () => {
                     setIsExpanded={setNutritionExpanded}
                 />
             }
+            </div>
 
-            <HealthList />
+<HealthList
+  setWaterExpanded={setWaterExpanded}
+  setTemperanceExpanded={setTemperanceExpanded}
+  setExersiceExpanded={setExersiceExpanded}
+  setSunshineExpanded={setSunshineExpanded}
+  setRestExpanded={setRestExpanded}
+  setTrustInGodExpanded={setTrustInGodExpanded}
+  setAirExpanded={setAirExpanded}
+  setNutritionExpanded={setNutritionExpanded}
+/>
 
             </Masonry>
 

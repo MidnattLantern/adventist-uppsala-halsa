@@ -1,8 +1,105 @@
 .HealthListView {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
     min-width: 350px;
     width: 350px;
     height: 40vh;
+    overflow: hidden;
+}
+
+.DropdownView {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin: 10px;
+}
+
+.KeyCharacter {
+    position: relative;
+    transition: all 0.5s ease;
+    top: 0px;
+    font-family: var(--font-theme-primary);
+    font-weight: 1000;
+}
+
+.Key1Column,
+.Key2Column,
+.Key3Column,
+.Key4Column,
+.Key5Column,
+.Key6Column,
+.Key7Column,
+.Key8Column{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+    font-size: 20px;
+    font-family: var(--font-theme-secondary);
+    color: var(--color-theme-primary);
+    position: relative;
+    width: 35px;
+    height: 150px;
+    overflow: visible;
+    top: 0px;
+}
+
+.Key1Title,
+.Key2Title,
+.Key3Title,
+.Key4Title,
+.Key5Title,
+.Key6Title,
+.Key7Title,
+.Key8Title{
+    position: relative;
+    transition: all 0.4s ease;
+    top: 0px;
+    opacity: 0;
+    min-width: 200px;
+    overflow: hidden;
+}
+
+.Key1Column:hover > h1,
+.Key1Column:hover > p,
+.Key2Column:hover > h1,
+.Key2Column:hover > p,
+.Key3Column:hover > h1,
+.Key3Column:hover > p,
+.Key4Column:hover > h1,
+.Key4Column:hover > p,
+.Key5Column:hover > h1,
+.Key5Column:hover > p,
+.Key6Column:hover > h1,
+.Key6Column:hover > p,
+.Key7Column:hover > h1,
+.Key7Column:hover > p,
+.Key8Column:hover > h1,
+.Key8Column:hover > p{
+    top: 30px;
+    opacity: 1;
+    transition: all 0.2s ease;
+    color: var(--color-cave);
+}
+
+.OrdinaryView {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 250px;
+}
+.OrdinaryKey{
+    width: 49%;
+    text-align: left;
+    color: var(--color-theme-primary);
+}
+.OrdinaryKey:hover {
+    color: var(--color-cave);
 }
 
 @media (min-width: 768px) {
