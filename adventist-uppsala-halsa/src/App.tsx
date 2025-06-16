@@ -4,6 +4,8 @@ import Header from './components/Header/Header';
 import EightHealthKeysWrapper from './pages/EightHealthKeys/EightHealthKeysWrapper';
 import Fuse from 'fuse.js';
 import waterContent from "./content/healthKeys/water.json";
+import Dropdown from './components/Dropdown/Dropdown';
+import AboutUsWrapper from './pages/AboutUs/AboutUsWrapper';
 
 const App = () => {
   type HealthKeyCardContent = {
@@ -34,7 +36,15 @@ results.forEach(result => {
       </header>
 
       <main className={Styles.MainContainer}>
-        <EightHealthKeysWrapper />
+
+        <Dropdown title='HÄLSONYCKLAR' expandedByDefault={true}>
+          <EightHealthKeysWrapper />
+        </Dropdown>
+
+        <Dropdown title='VILKA ÄR VI?'>
+          <AboutUsWrapper/>
+        </Dropdown>
+
       </main>
 
       <footer className={Styles.FooterContainer} data-testid="footer">

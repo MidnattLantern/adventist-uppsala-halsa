@@ -242,6 +242,14 @@ fuse.js
 ---
 - Client end search engine.
 
+
+Technical debt
+===
+- The implementation of Masonry.js was done with limited experience. The layout structure is stable, however, it may be difficult to understand and reiterate, particularly in the following stylesheets:
+- App.module.css
+- Masonry.module.css
+- Dropdown.module.css
+
 Other
 ===
 Readme image:

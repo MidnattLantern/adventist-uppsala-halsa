@@ -1,12 +1,11 @@
 
-/* default is unelegant but it gets the job done */
+/* Technical debt - default is unelegant but it gets the job done */
 .MasonryGrid {
   display: flex;
-  margin-left: 4rem;
-  width: auto;
+  width: 80%;
 }
 .MasonryGridColumn {
-  padding-left: 0rem;
+  padding-left: 4rem;
   background-clip: padding-box;
 }
 .MasonryGridColumn > div {

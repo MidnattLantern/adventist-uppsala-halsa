@@ -172,16 +172,16 @@ const EightHealthKeysWrapper = () => {
             }
             </div>
 
-<HealthList
-  setWaterExpanded={setWaterExpanded}
-  setTemperanceExpanded={setTemperanceExpanded}
-  setExersiceExpanded={setExersiceExpanded}
-  setSunshineExpanded={setSunshineExpanded}
-  setRestExpanded={setRestExpanded}
-  setTrustInGodExpanded={setTrustInGodExpanded}
-  setAirExpanded={setAirExpanded}
-  setNutritionExpanded={setNutritionExpanded}
-/>
+            <HealthList
+            setWaterExpanded={setWaterExpanded}
+            setTemperanceExpanded={setTemperanceExpanded}
+            setExersiceExpanded={setExersiceExpanded}
+            setSunshineExpanded={setSunshineExpanded}
+            setRestExpanded={setRestExpanded}
+            setTrustInGodExpanded={setTrustInGodExpanded}
+            setAirExpanded={setAirExpanded}
+            setNutritionExpanded={setNutritionExpanded}
+            />
 
             </Masonry>
 
