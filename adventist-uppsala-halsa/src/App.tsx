@@ -6,6 +6,11 @@ import Fuse from 'fuse.js';
 import waterContent from "./content/healthKeys/water.json";
 import Dropdown from './components/Dropdown/Dropdown';
 import AboutUsWrapper from './pages/AboutUs/AboutUsWrapper';
+import NaturalMedicineWrapper from './pages/NaturalMedicine/NaturalMedicineWrapper';
+import AbuseWrapper from './pages/Abuse/AbuseWrapper';
+import NervousSystemHealthWrapper from './pages/NervousSystemHealth/NervousSystemHealthWrapper';
+import HerbsForHumansWrapper from './pages/HerbsForHumans/HerbsForHumansWrapper';
+import FirstAidKitWrapper from './pages/FirstAidKit/FirstAidKitWrapper';
 
 const App = () => {
   type HealthKeyCardContent = {
@@ -37,12 +42,32 @@ results.forEach(result => {
 
       <main className={Styles.MainContainer}>
 
-        <Dropdown title='HÄLSONYCKLAR' expandedByDefault={true}>
+        <Dropdown title='HÄLSONYCKLAR' expandedByDefault={true} id="eight-health-keys">
           <EightHealthKeysWrapper />
         </Dropdown>
 
-        <Dropdown title='VILKA ÄR VI?'>
+        <Dropdown title='VILKA ÄR VI?' id="about-us">
           <AboutUsWrapper/>
+        </Dropdown>
+
+        <Dropdown title='FÖRKYLNING & NATURLIG BEHANDLING' id="natural-medicine-wrapper">
+          <NaturalMedicineWrapper/>
+        </Dropdown>
+
+        <Dropdown title='MISSBRUK' id="abuse">
+          <AbuseWrapper />
+        </Dropdown>
+
+        <Dropdown title='HÄLSA FÖR NERVSYSTEMET' id="nervous-system-health-wrapper">
+          <NervousSystemHealthWrapper />
+        </Dropdown>
+
+        <Dropdown title="ÖRTER TILL MÄNNISKANS TJÄNST" id="herbs-for-humans">
+          <HerbsForHumansWrapper />
+        </Dropdown>
+
+        <Dropdown title='1:a HJÄLPEN KIT' id="first-aid-kit">
+          <FirstAidKitWrapper />
         </Dropdown>
 
       </main>
