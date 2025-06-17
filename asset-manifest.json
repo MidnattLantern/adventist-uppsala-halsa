@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/adventist-uppsala-halsa/static/css/main.6cb7b2aa.css",
-    "main.js": "/adventist-uppsala-halsa/static/js/main.9f6c9004.js",
+    "main.css": "/adventist-uppsala-halsa/static/css/main.3027d3a0.css",
+    "main.js": "/adventist-uppsala-halsa/static/js/main.a442db17.js",
     "static/js/453.15b4cdc3.chunk.js": "/adventist-uppsala-halsa/static/js/453.15b4cdc3.chunk.js",
     "static/media/unsplash-shahovskaya-rest.jpg": "/adventist-uppsala-halsa/static/media/unsplash-shahovskaya-rest.90f6e501b6718cdadc2d.jpg",
     "static/media/unsplash-victoria-shes-nutrition.jpg": "/adventist-uppsala-halsa/static/media/unsplash-victoria-shes-nutrition.549034b4c8a40a964f13.jpg",
@@ -14,12 +14,12 @@
     "static/media/adventist-symbol-cave.png": "/adventist-uppsala-halsa/static/media/adventist-symbol-cave.52d66fd34754db21b87b.png",
     "index.html": "/adventist-uppsala-halsa/index.html",
     "static/media/search-icon.svg": "/adventist-uppsala-halsa/static/media/search-icon.74050bccf54808ed47cb3e514a0ad6b6.svg",
-    "main.6cb7b2aa.css.map": "/adventist-uppsala-halsa/static/css/main.6cb7b2aa.css.map",
-    "main.9f6c9004.js.map": "/adventist-uppsala-halsa/static/js/main.9f6c9004.js.map",
+    "main.3027d3a0.css.map": "/adventist-uppsala-halsa/static/css/main.3027d3a0.css.map",
+    "main.a442db17.js.map": "/adventist-uppsala-halsa/static/js/main.a442db17.js.map",
     "453.15b4cdc3.chunk.js.map": "/adventist-uppsala-halsa/static/js/453.15b4cdc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cb7b2aa.css",
-    "static/js/main.9f6c9004.js"
+    "static/css/main.3027d3a0.css",
+    "static/js/main.a442db17.js"
   ]
 }
