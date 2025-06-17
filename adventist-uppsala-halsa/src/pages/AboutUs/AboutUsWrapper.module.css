@@ -1,3 +1,21 @@
 .AboutUsWrapperView {
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+}
+
+.Title {
+    font-family: var(--font-theme-primary);
+    color: var(--color-text-title);
+}
+
+.Paragraph {
+    font-family: var(--font-theme-secondary);
+    color: var(--color-text-paragraph);
+}
+
+.ExternalLink {
+    font-family: var(--font-theme-secondary);
+    color: var(--color-theme-secondary);
 }

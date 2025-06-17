@@ -42,7 +42,7 @@ results.forEach(result => {
 
       <main className={Styles.MainContainer}>
 
-        <Dropdown title='HÄLSONYCKLAR' expandedByDefault={true} id="eight-health-keys">
+        <Dropdown title='8 HÄLSONYCKLAR' expandedByDefault={true} id="eight-health-keys">
           <EightHealthKeysWrapper />
         </Dropdown>
 
