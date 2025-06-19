@@ -145,6 +145,12 @@ EightHealthKeys
 - Each health key card has two different components specific to the viewport width. Because the layout and element structure are very different depending on the viewport, it was easier to split them into two. Combining the two into one unified component is done in the wrapper parent, which also tracks the viewport.
 - Because each health key retrieve content as text from an external json file, the customTitle prop enables the developer to pass an optional custom element if regular plain text is not enough. This optional prop was created because the 2 in "<p>0<sub>2</sub></p>" need the <sub> tag, which json does not enable.
 
+About us
+---
+- Brief historical context regarding the organization's inspiration about health.
+- As of documenting this (19 june 2025) the page use a zig-zag layout, where an icon jumps from left to right for every other <div>. This slices the wall of long text into smaller digestible parts.
+- By default, the icons are a four-pointed <svg> star, optional svg icons may be replaced in future features.
+
 Responsiveness
 ===
 - The project is designed with a mobile-first approach. CSS files use three @media queries to adjust for larger screens by detecting min-width.

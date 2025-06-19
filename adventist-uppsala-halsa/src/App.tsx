@@ -46,7 +46,7 @@ results.forEach(result => {
           <EightHealthKeysWrapper />
         </Dropdown>
 
-        <Dropdown title='VILKA ÄR VI?' id="about-us">
+        <Dropdown title='VILKA ÄR VI?' expandedByDefault={true} id="about-us">
           <AboutUsWrapper/>
         </Dropdown>
 
