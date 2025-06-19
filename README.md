@@ -150,6 +150,16 @@ About us
 - Brief historical context regarding the organization's inspiration about health.
 - As of documenting this (19 june 2025) the page use a zig-zag layout, where an icon jumps from left to right for every other <div>. This slices the wall of long text into smaller digestible parts.
 - By default, the icons are a four-pointed <svg> star, optional svg icons may be replaced in future features.
+- The default zig-zag works well on narrow screens, but on wide desktops, the long jump from left to right feels awkward. That’s why the custom <ZigZag> component wraps content with flex-wrap to support a two-column layout:
+```css
+.ZigZagView{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+```
+- The width of the child components, ContentBlockView, changes from 100% to 50% on desktop view—small enough to form a two-column layout.
+
 
 Responsiveness
 ===
