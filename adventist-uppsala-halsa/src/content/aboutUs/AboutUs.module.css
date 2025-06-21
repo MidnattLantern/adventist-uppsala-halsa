@@ -1,0 +1,32 @@
+.Title {
+    font-family: var(--font-theme-primary);
+    color: var(--color-theme-primary);
+    text-shadow: 0px 1px 1px var(--color-shadow);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.Paragraph {
+    font-family: var(--font-theme-secondary);
+    color: var(--color-text-paragraph);
+    text-align: left;
+    margin: 0px;
+    font-weight: 450;
+}
+
+.ExternalLink {
+    font-family: var(--font-theme-secondary);
+    color: var(--color-theme-secondary);
+}
+
+.ContentIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+}
+.ContentIcon {
+    fill: var(--color-theme-primary);
+    width: 20px;
+    height: auto;
+}

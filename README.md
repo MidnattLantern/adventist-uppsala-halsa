@@ -159,6 +159,32 @@ About us
 }
 ```
 - The width of the child components, ContentBlockView, changes from 100% to 50% on desktop view—small enough to form a two-column layout.
+- Any content is located inside the content/aboutUs directory, following a similar structure to the health keys content. Unlike healthKeys, which uses JSON tables to store content, aboutUs uses JSX to support tags that JSON cannot store, such as <a> or <strong>.
+- Although there’s no plan for upscaling, this component still uses scalable-friendly and DRY (Don’t Repeat Yourself) iterative rendering. All content is imported from the content/aboutUs directory into a single constant:
+```jsx
+const paragraphs = [
+  Paragraph1,
+  Paragraph2,
+  Paragraph3,
+  ...
+]
+```
+- If the content scales, this component will automatically adapt:
+```jsx
+    const renderParagraphs = (start: number, end: number) => {
+        return(
+            paragraphs.slice(start, end).map((Content, i) => 
+                <ContentBlock key={start + i} reverse={i % 2 === 0}>
+                    <Content />
+                </ContentBlock>
+            )
+        )
+    };
+```
+- Now, content can be rendered within a specified range, e.g., from 2 to 4:
+```jsx
+{renderParagraphs(2, 4)}
+```
 
 
 Responsiveness
