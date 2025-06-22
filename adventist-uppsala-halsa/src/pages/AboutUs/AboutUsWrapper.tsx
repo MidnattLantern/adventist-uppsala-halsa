@@ -1,6 +1,36 @@
 import Styles from "./AboutUsWrapper.module.css";
 import { ReactNode } from "react";
 import { ReactComponent as GenericStar } from "../../assets/vector-icons/generic-star-icon.svg";
+import { Paragraph1 } from "../../content/aboutUs/Paragraph1";
+import { Paragraph2 } from "../../content/aboutUs/Paragraph2";
+import { Paragraph3 } from "../../content/aboutUs/Paragraph3";
+import { Paragraph4 } from "../../content/aboutUs/Paragraph4";
+import { Paragraph5 } from "../../content/aboutUs/Paragraph5";
+import { Paragraph6 } from "../../content/aboutUs/Paragraph6";
+import { Paragraph7 } from "../../content/aboutUs/Paragraph7";
+import { Paragraph8 } from "../../content/aboutUs/Paragraph8";
+import { Paragraph9 } from "../../content/aboutUs/Paragraph9";
+import { Paragraph10 } from "../../content/aboutUs/Paragraph10";
+import { Paragraph11 } from "../../content/aboutUs/Paragraph11";
+
+const paragraphs = [
+  Paragraph1,
+  Paragraph2,
+  Paragraph3,
+  Paragraph4,
+  Paragraph5,
+  Paragraph6,
+  Paragraph7,
+  Paragraph8,
+  Paragraph9,
+  Paragraph10,
+  Paragraph11,
+];
+
+// magic numbers
+const FIRST_PARAGRAPH = 0;
+const BREAK_PARAGRAPH = 5;
+const LAST_PARAGRAPH = paragraphs.length;
 
 const AboutUsWrapper = () => {
 
@@ -25,51 +55,24 @@ const AboutUsWrapper = () => {
         )
     };
 
+    // iterator
+    const renderParagraphs = (start: number, end: number) => {
+        return(
+            paragraphs.slice(start, end).map((Content, i) => 
+                <ContentBlock key={start + i} reverse={i % 2 === 0}>
+                    <Content />
+                </ContentBlock>
+            )
+        )
+    };
+
     return(
         <div className={Styles.AboutUsWrapperView}>
             <h1 className={Styles.Title}>{"Vilka är vi?"}</h1>
-            <ZigZag>
-                <ContentBlock reverse={true}>
-                    <p className={Styles.Paragraph}>{"En hälsosam livsstil har praktiserats av sjundedagsadventister sedan mitten av 1800-talet."}</p>
-                </ContentBlock>
-                <ContentBlock>
-                    <p className={Styles.Paragraph}>{"Adventisterna driver universitet, sjukhus och hälsocenter på många ställen i världen."}</p>
-                </ContentBlock>
-                <ContentBlock reverse={true}>
-                    <p className={Styles.Paragraph}>{"Ett välkänt universitetssjukhus är Loma Linda i Kalifornien, erkänt som ledande inom hälso- och sjukvård, inklusive banbrytande arbete inom områden som organtransplantation, cancerbehandling och hjärtvård."}</p>
-                </ContentBlock>
-                <ContentBlock>
-                    <p className={Styles.Paragraph}>{"Omfattande hälsostudier har genomförts med kopplingen mellan livsstil och ett längre och friskare liv:"}</p>
-                    <a className={Styles.ExternalLink} target="_blank" rel="noreferrer" href="https://adventisthealthstudy.org/studies/AHS-1">{"adventisthealthstudy.org/studies/AHS-1"}</a>
-                    <a className={Styles.ExternalLink} target="_blank" rel="noreferrer" href="https://adventisthealthstudy.org/studies/AHS-2">{"adventisthealthstudy.org/studies/AHS-2"}</a>
-                </ContentBlock>
-                <ContentBlock reverse={true}>
-                    <p className={Styles.Paragraph}>{"Loma Linda i Kalifornien är en av 5 platser i världen - blå zoner - där befolkningen är friskare, och lever avsevärt mycket längre än den övriga befolkningen."}</p>
-                    <a className={Styles.ExternalLink} target="_blank" rel="noreferrer" href="https://www.bluezones.com/explorations/loma-linda-california/">bluezones.com/explorations/loma-linda-california</a>
-                </ContentBlock>
-            </ZigZag>
-                <hr className={Styles.LineBreak}/>
-                <h1 className={Styles.Title}>{"BATTLE CREEK SANITARIUM"}</h1>
-            <ZigZag>
-                <ContentBlock reverse={true}>
-                    <p className={Styles.Paragraph}>{"Battle Creek Sanitarium, Springfield, Michigan i USA var en världsberömd kurort, eller spa, baserad på hälsoprinciper som förespråkades av SDA kyrkan."}</p>
-                </ContentBlock>
-                <ContentBlock>
-                    <p className={Styles.Paragraph}>{"1876-1943 förestods den av dr John Harvey Kellog, som numera är mer känd för Corn Flakes."}</p>
-                </ContentBlock>
-                <ContentBlock reverse={true}>
-                    <p className={Styles.Paragraph}>{"Banbrytande metoder som ljusterapi, vattenterapi, rörelse, rätt vegetarisk kost, vila var principer som användes för att bota dåtida sjukdomar."}</p>
-                </ContentBlock>
-                <ContentBlock>
-                    <p className={Styles.Paragraph}>{"Alla terapier utfördes med förtröstan på gudomlig kraft och kärlek."}</p>
-                </ContentBlock>
-                <ContentBlock reverse={true}>
-                    <p className={Styles.Paragraph}>{"TBC var den kanske mest botade sjukdomen. Naturen var en av de viktigaste faktorerna i läkeprocessen."}</p>
-                </ContentBlock>
-                <ContentBlock>
-                    <p className={Styles.Paragraph}>{"Högt uppsatta politiker med familjer, och affärsmän sökte sig till Battle Creek."}</p>
-                </ContentBlock>
-            </ZigZag>
+            <ZigZag> {renderParagraphs(FIRST_PARAGRAPH, BREAK_PARAGRAPH)} </ZigZag>
+            <hr className={Styles.LineBreak}/>
+            <h1 className={Styles.Title}>{"BATTLE CREEK SANITARIUM"}</h1>
+            <ZigZag> {renderParagraphs(BREAK_PARAGRAPH, LAST_PARAGRAPH)} </ZigZag>
         </div>
     )
 };

@@ -50,23 +50,23 @@ results.forEach(result => {
           <AboutUsWrapper/>
         </Dropdown>
 
-        <Dropdown title='FÖRKYLNING & NATURLIG BEHANDLING' id="natural-medicine-wrapper">
+        <Dropdown title='FÖRKYLNING & NATURLIG BEHANDLING' expandedByDefault={true} id="natural-medicine-wrapper">
           <NaturalMedicineWrapper/>
         </Dropdown>
 
-        <Dropdown title='MISSBRUK' id="abuse">
+        <Dropdown title='MISSBRUK' expandedByDefault={false} id="abuse">
           <AbuseWrapper />
         </Dropdown>
 
-        <Dropdown title='HÄLSA FÖR NERVSYSTEMET' id="nervous-system-health-wrapper">
+        <Dropdown title='HÄLSA FÖR NERVSYSTEMET' expandedByDefault={false} id="nervous-system-health-wrapper">
           <NervousSystemHealthWrapper />
         </Dropdown>
 
-        <Dropdown title="ÖRTER TILL MÄNNISKANS TJÄNST" id="herbs-for-humans">
+        <Dropdown title="ÖRTER TILL MÄNNISKANS TJÄNST" expandedByDefault={false} id="herbs-for-humans">
           <HerbsForHumansWrapper />
         </Dropdown>
 
-        <Dropdown title='1:a HJÄLPEN KIT' id="first-aid-kit">
+        <Dropdown title='1:a HJÄLPEN KIT' expandedByDefault={false} id="first-aid-kit">
           <FirstAidKitWrapper />
         </Dropdown>
 

@@ -16,6 +16,10 @@ code {
     monospace;
 }
 
+hr {
+  width: 100%;
+}
+
 /* theme variables */
 :root {
   --color-theme-primary: #3B7B88;

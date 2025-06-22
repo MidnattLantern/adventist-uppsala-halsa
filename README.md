@@ -1,7 +1,8 @@
 Live link: https://midnattlantern.github.io/adventist-uppsala-halsa/
 
-The project Adventist Uppsala Hälsa (“AUH” for short) is a commission for Uppsala’s Adventist community, aiming to provide health-related advice and guidelines according to the Seventh-day Adventist values. The aim is to inform people about how they can improve their quality of life through habits and food/drinks.
+The project Adventist Uppsala Hälsa (“AUH” for short) is a commission from Uppsala’s Adventist community, aiming to provide health-related advice and guidelines according to the Seventh-day Adventist values. The aim is to inform people about how they can improve their quality of life through habits and food/drinks.
 
+The developer, Alma Isaksson, has contributed to this project solely in a technical capacity. The inclusion of certain content does not imply her personal or professional endorsement. This project was undertaken as a development exercise to showcase skills in client-side architecture and implementation. The purpose of this site is not to promote unscientific claims or prescribe a particular lifestyle, but rather to present alternative health perspectives, as viewed by a health-focused organization, that may have been overlooked or underexplored by the scientific community.
 
 Setting Up the Project in Your IDE:
 ===
