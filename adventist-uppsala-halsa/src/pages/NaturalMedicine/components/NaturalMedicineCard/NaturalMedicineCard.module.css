@@ -44,6 +44,10 @@
     height: auto;
 }
 
+.SectionView {
+    margin-bottom: 50px;
+}
+
 .SectionTitle {
     font-family: var(--font-theme-primary);
     color: var(--color-text-title);

@@ -16,17 +16,17 @@ const NaturalMedicineCard = ({
 
             <div className={`${Styles.ContentView} ${isExpanded && Styles.ContentViewExpanded}`}>
                 {effectsContent && <h1 className={Styles.SectionTitle}>effekter</h1>}
-                <div id={`${idName}-effects`}>
+                <div id={`${idName}-effects`} className={`${isExpanded && Styles.SectionView}`}>
                     {isExpanded && effectsContent}
                 </div>
 
                 {recipeContent && <h1 className={Styles.SectionTitle}>recept</h1>}
-                <div id={`${idName}-recipe`}>
+                <div id={`${idName}-recipe`} className={`${isExpanded && Styles.SectionView}`}>
                     {isExpanded && recipeContent}
                 </div>
 
                 {treatmentContent && <h1 className={Styles.SectionTitle}>behandling</h1>}
-                <div id={`${idName}-treatment`}>
+                <div id={`${idName}-treatment`} className={`${isExpanded && Styles.SectionView}`}>
                     {isExpanded && treatmentContent}
                 </div>
                 <Button semiOpaque={true} onClick={() => {setIsExpanded(!isExpanded)}}>{isExpanded ? <>Stäng</> : <>Läs mer</>}</Button>

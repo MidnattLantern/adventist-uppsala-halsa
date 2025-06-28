@@ -16,15 +16,25 @@
     text-shadow: 0px 1px 1px var(--color-shadow);
 }
 
+.NavLinkTable {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .NavLinkRow {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    justify-content: center;
 }
+
 .NavLinkSection {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 150px;
 }
 
 .NavLink {
@@ -39,12 +49,19 @@
     color: var(--color-text-paragraph);
     margin-top: 10px;
 }
-.AlternativeParagraph {
+.AlternativeParagraph,
+.AlternativeListItem {
     font-family: var(--font-theme-secondary);
     color: var(--color-white);
-    margin: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 5px;
     text-shadow: 0px 1px 1px var(--color-shadow);
     font-weight: 500;
+}
+
+.AlternativeListItem {
+    margin-left: 40px;
 }
 
 .ExternalLink {
@@ -53,10 +70,20 @@
 }
 
 .TableSize {
-    width: 325px;
+    width: calc(100% - 50px);
+    padding: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid var(--color-white-transparent);
 }
 
 .ThirdsBreaker {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+@media (min-width: 1280px) {
+    .NavLinkTable {
+        flex-direction: row;
+    }
 }
