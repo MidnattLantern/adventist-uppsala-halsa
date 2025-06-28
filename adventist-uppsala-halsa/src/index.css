@@ -19,6 +19,9 @@ code {
 hr {
   width: 100%;
 }
+li {
+  margin-left: 20px;
+}
 
 /* theme variables */
 :root {
@@ -39,6 +42,7 @@ hr {
   --color-copyright: #7c786f;
   --color-dark-background: rgb(25, 30, 35);
   --color-dark-background-transparent: rgba(10,10,10,0.5);
+  --color-dark-background-semi-transparent: rgba(10,10,10,0.65);
   --color-shadow: rgba(0,0,0,0.25);
 
   --font-theme-primary: "Merriweather", serif;
