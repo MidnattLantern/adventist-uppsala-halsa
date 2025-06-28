@@ -1,8 +1,8 @@
 import { ReactNode, useState } from "react";
-import Styles from "./NaturalMedecineCard.module.css";
+import Styles from "./NaturalMedicineCard.module.css";
 import Button from "../../../../components/Button/Button";
 
-const NaturalMedecineCard = ({
+const NaturalMedicineCard = ({
     title, idName, effectsContent, recipeContent, treatmentContent
 } : {
     title?: ReactNode, idName: string, effectsContent?: ReactNode, recipeContent?: ReactNode, treatmentContent?: ReactNode
@@ -10,7 +10,7 @@ const NaturalMedecineCard = ({
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
     return(
-        <div className={`${Styles.NaturalMedecineCardView} ${!isExpanded && Styles.ExpandEntireElement}`} id={idName} onClick={() => {!isExpanded && setIsExpanded(true)}}>
+        <div className={`${Styles.NaturalMedicineCardView} ${!isExpanded && Styles.ExpandEntireElement}`} id={idName} onClick={() => {!isExpanded && setIsExpanded(true)}}>
             <h1 className={Styles.Title}>{title}</h1>
             <hr className={Styles.HeaderRow}/>
 
@@ -35,4 +35,4 @@ const NaturalMedecineCard = ({
     )
 };
 
-export default NaturalMedecineCard;
+export default NaturalMedicineCard;

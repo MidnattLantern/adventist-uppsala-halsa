@@ -1,17 +1,34 @@
 // original title: NATURLIGA BEHANDLINGAR MOT FÖRKYLNING OCH INFLUENSA
-import NaturalMedecineCard from "./components/NaturalMedecineCard.tsx/NaturalMedecineCard";
+import ZigZag from "../../components/ZigZag/ZigZag";
+import NaturalMedicineCard from "./components/NaturalMedicineCard/NaturalMedicineCard";
 import Styles from "./NaturalMedicineWrapper.module.css";
 
+const Paragraph1 = () => {
+    return <p className={Styles.Paragraph}>Påbörja behandling så tidigt som möjligt.</p>
+}
+const Paragraph2 = () => {
+    return <p className={Styles.Paragraph}>Influensabomben och ingefärashot kan även användas förebyggande.</p>
+}
+const Paragraph3 = () => {
+    return <p className={Styles.Paragraph}><strong>8 hälsonycklar</strong> hjälper dig att bli fri från ohälsosamma vanor och beroenden.</p>
+}
+const Paragraph4 = () => {
+    return <p className={Styles.Paragraph}>Det tar 21 dagar att etablera en vana, och efter 60 dagar sitter det.</p>
+}
+
 const NaturalMedicineWrapper = () => {
+     const paragraphs = [
+        Paragraph1,
+        Paragraph2,
+        Paragraph3,
+        Paragraph4
+     ];
 
     return(
         <div className={Styles.NaturalMedicineWrapperView}>
 
             <h1 className={Styles.Title}>FÖRKYLNING & NATURLIG BEHANDLING</h1>
-            <p className={Styles.Paragraph}>Påbörja behandling så tidigt som möjligt.</p>
-            <p className={Styles.Paragraph}>Influensabomben och ingefärashot kan även användas förebyggande.</p>
-            <p className={Styles.Paragraph}><strong>8 hälsonycklar</strong> hjälper dig att bli fri från ohälsosamma vanor och beroenden.</p>
-            <p className={Styles.Paragraph}>Det tar 21 dagar att etablera en vana, och efter 60 dagar sitter det.</p>
+            <ZigZag contentData={paragraphs}/>
 
             <table>
                 <tr className={Styles.NavLinkRow}>
@@ -40,7 +57,7 @@ const NaturalMedicineWrapper = () => {
                 </tr>
             </table>
 
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"älgörtste"}
                 idName="meadowsweet"
                 effectsContent={<>
@@ -67,7 +84,7 @@ const NaturalMedicineWrapper = () => {
                 </>}
             />
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Influensabomben"}
                 idName="flubomb"
                 effectsContent={null}
@@ -108,7 +125,7 @@ const NaturalMedicineWrapper = () => {
                 </>}
             />
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Vattenterapi"}
                 idName="watertherapy"
                 effectsContent={null}
@@ -125,7 +142,7 @@ const NaturalMedicineWrapper = () => {
 
             <hr className={Styles.ThirdsBreaker}/>
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Cayennepeppar"}
                 idName="cayennepepper"
                 effectsContent={<>
@@ -137,7 +154,7 @@ const NaturalMedicineWrapper = () => {
                 </>}
             />
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Hostmedicin"}
                 idName="coughmedicine"
                 effectsContent={null}
@@ -154,7 +171,7 @@ const NaturalMedicineWrapper = () => {
                 </>}
             />
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Öroninflammation"}
                 idName="otitis"
                 effectsContent={null}
@@ -170,7 +187,7 @@ const NaturalMedicineWrapper = () => {
 
             <hr className={Styles.ThirdsBreaker}/>
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Hosta"}
                 idName="onion-cough"
                 effectsContent={null}
@@ -186,7 +203,7 @@ const NaturalMedicineWrapper = () => {
                 </>}
             />
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Halsont"}
                 idName="sore-throat"
                 effectsContent={null}
@@ -198,7 +215,7 @@ const NaturalMedicineWrapper = () => {
                 </>}
             />
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Ingefära Shot"}
                 idName="ginger-shot"
                 effectsContent={null}
@@ -218,7 +235,7 @@ const NaturalMedicineWrapper = () => {
 
             <hr className={Styles.ThirdsBreaker}/>
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Cikoriarot"}
                 idName="chicoryroot"
                 effectsContent={<>
@@ -237,7 +254,7 @@ const NaturalMedicineWrapper = () => {
                 treatmentContent={null}
             />
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Carob"}
                 idName="carob"
                 effectsContent={<>
@@ -256,7 +273,7 @@ const NaturalMedicineWrapper = () => {
                 treatmentContent={null}
             />
             
-            <NaturalMedecineCard
+            <NaturalMedicineCard
                 title={"Chaga Sprängticka"}
                 idName="chaga"
                 effectsContent={<>
