@@ -1,3 +1,7 @@
+.IntroductionView{
+    width: auto;
+}
+
 .NaturalMedicineWrapperView {
     display: flex;
     flex-direction: column;

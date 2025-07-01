@@ -1,0 +1,33 @@
+.NavLinkTable {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.NavLinkRow {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.NavLinkSection {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.NavLink {
+    color: var(--color-theme-primary);
+}
+.NavLink:hover {
+    color: var(--color-cave);
+}
+
+@media (min-width: 1280px) {
+    .NavLinkTable {
+        flex-direction: row;
+    }
+}

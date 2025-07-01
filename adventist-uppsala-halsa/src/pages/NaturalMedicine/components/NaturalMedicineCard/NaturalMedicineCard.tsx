@@ -15,17 +15,17 @@ const NaturalMedicineCard = ({
             <hr className={Styles.HeaderRow}/>
 
             <div className={`${Styles.ContentView} ${isExpanded && Styles.ContentViewExpanded}`}>
-                {effectsContent && <h1 className={Styles.SectionTitle}>effekter</h1>}
+                {effectsContent && <h1 className={`${Styles.SectionTitle} ${isExpanded && Styles.SectionTitleToLeft}`}>effekter</h1>}
                 <div id={`${idName}-effects`} className={`${isExpanded && Styles.SectionView}`}>
                     {isExpanded && effectsContent}
                 </div>
 
-                {recipeContent && <h1 className={Styles.SectionTitle}>recept</h1>}
+                {recipeContent && <h1 className={`${Styles.SectionTitle} ${isExpanded && Styles.SectionTitleToLeft}`}>recept</h1>}
                 <div id={`${idName}-recipe`} className={`${isExpanded && Styles.SectionView}`}>
                     {isExpanded && recipeContent}
                 </div>
 
-                {treatmentContent && <h1 className={Styles.SectionTitle}>behandling</h1>}
+                {treatmentContent && <h1 className={`${Styles.SectionTitle} ${isExpanded && Styles.SectionTitleToLeft}`}>behandling</h1>}
                 <div id={`${idName}-treatment`} className={`${isExpanded && Styles.SectionView}`}>
                     {isExpanded && treatmentContent}
                 </div>
