@@ -5,6 +5,7 @@
     padding: 20px;
 }
 
+/*
 .Title {
     font-family: var(--font-theme-primary);
     color: var(--color-theme-primary);
@@ -49,15 +50,16 @@
     margin-right: 20px;
     border: 1px solid var(--color-white-transparent);
 }
-
+*/
 .ThirdsBreaker {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
+/*
 .NavLink {
     color: var(--color-theme-primary);
 }
 .NavLink:hover {
     color: var(--color-cave);
 }
+    */

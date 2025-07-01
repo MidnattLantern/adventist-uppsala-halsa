@@ -1,4 +1,5 @@
 // original title: NATURLIGA BEHANDLINGAR MOT FÖRKYLNING OCH INFLUENSA
+import Masonry from "react-masonry-css";
 import CarobContent from "../../content/naturalMedicine/CarobContent";
 import CayennepepperContent from "../../content/naturalMedicine/CayennepepperContent";
 import ChagaContent from "../../content/naturalMedicine/ChagaContent";
@@ -15,100 +16,116 @@ import Introduction from "./components/Introduction/Intrroduction";
 import NaturalMedicineCard from "./components/NaturalMedicineCard/NaturalMedicineCard";
 import NavigationTable from "./components/NavigationTable/NavigationTable";
 import Styles from "./NaturalMedicineWrapper.module.css";
+import MasonryStyles from "./Masonry.module.css";
+import { useViewPortContext } from "../../contexts/useViewportContext";
 
 const NaturalMedicineWrapper = () => {
+    const { viewportWidth } = useViewPortContext();
+    const BREAKPOINT_DESKTOP = 1280;
 
     return(
         <div className={Styles.NaturalMedicineWrapperView}>
             <Introduction/>
             <NavigationTable/>
-            <NaturalMedicineCard
-                title={"älgörtste"}
-                idName="meadowsweet"
-                effectsContent={<MeadowsweetContent.Effects/>}
-                recipeContent={<MeadowsweetContent.Recipe/>}
-                treatmentContent={<MeadowsweetContent.Treatment/>}
-            />
-            <NaturalMedicineCard
-                title={"Influensabomben"}
-                idName="flubomb"
-                effectsContent={null}
-                recipeContent={<FlubombContent.Recipe/>}
-                treatmentContent={<FlubombContent.Treatment/>}
-            />
-            <NaturalMedicineCard
-                title={"Vattenterapi"}
-                idName="watertherapy"
-                effectsContent={null}
-                recipeContent={null}
-                treatmentContent={<WatertherapyContent.Treatment/>}
-            />
-            <hr className={Styles.ThirdsBreaker}/>
-            <NaturalMedicineCard
-                title={"Cayennepeppar"}
-                idName="cayennepepper"
-                effectsContent={<CayennepepperContent.Effects/>}
-                recipeContent={null}
-                treatmentContent={<CayennepepperContent.Treatment/>}
-            />
-            <NaturalMedicineCard
-                title={"Hostmedicin"}
-                idName="coughmedicine"
-                effectsContent={null}
-                recipeContent={<CoughmedicineContent.Recipe/>}
-                treatmentContent={<CoughmedicineContent.Treatment/>}
-            />
-            <NaturalMedicineCard
-                title={"Öroninflammation"}
-                idName="otitis"
-                effectsContent={null}
-                recipeContent={<OtitisContent.Recipe/>}
-                treatmentContent={<OtitisContent.Treatment/>}
-            />
-            <hr className={Styles.ThirdsBreaker}/>
-            <NaturalMedicineCard
-                title={"Hosta"}
-                idName="cough"
-                effectsContent={null}
-                recipeContent={<CoughContent.Recipe/>}
-                treatmentContent={<CoughContent.Treatment/>}
-            />
-            <NaturalMedicineCard
-                title={"Halsont"}
-                idName="sore-throat"
-                effectsContent={null}
-                recipeContent={null}
-                treatmentContent={<SoreThroatContent.Treatment/>}
-            />
-            <NaturalMedicineCard
-                title={"Ingefära Shot"}
-                idName="ginger-shot"
-                effectsContent={null}
-                recipeContent={<GingerShotContent.Recipe/>}
-                treatmentContent={null}
-            />
-            <hr className={Styles.ThirdsBreaker}/>
-            <NaturalMedicineCard
-                title={"Cikoriarot"}
-                idName="chicoryroot"
-                effectsContent={<ChicoryrootContent.Effects/>}
-                recipeContent={null}
-                treatmentContent={null}
-            />
-            <NaturalMedicineCard
-                title={"Carob"}
-                idName="carob"
-                effectsContent={<CarobContent.Effects/>}
-                recipeContent={null}
-                treatmentContent={null}
-            />
-            <NaturalMedicineCard
-                title={"Chaga Sprängticka"}
-                idName="chaga"
-                effectsContent={<ChagaContent.Effects/>}
-                recipeContent={null}
-                treatmentContent={null}
-            />
+
+            <Masonry
+            breakpointCols={{
+                default: 2,
+                1280: 1 //BREAKPOINT_DESKTOP
+            }}
+            className={MasonryStyles.MasonryGrid}
+            columnClassName={MasonryStyles.MasonryGridColumn}
+            >
+
+                <NaturalMedicineCard
+                    title={"älgörtste"}
+                    idName="meadowsweet"
+                    effectsContent={<MeadowsweetContent.Effects/>}
+                    recipeContent={<MeadowsweetContent.Recipe/>}
+                    treatmentContent={<MeadowsweetContent.Treatment/>}
+                />
+                <NaturalMedicineCard
+                    title={"Influensabomben"}
+                    idName="flubomb"
+                    effectsContent={null}
+                    recipeContent={<FlubombContent.Recipe/>}
+                    treatmentContent={<FlubombContent.Treatment/>}
+                />
+                <NaturalMedicineCard
+                    title={"Vattenterapi"}
+                    idName="watertherapy"
+                    effectsContent={null}
+                    recipeContent={null}
+                    treatmentContent={<WatertherapyContent.Treatment/>}
+                />
+                {viewportWidth < BREAKPOINT_DESKTOP && <hr className={Styles.ThirdsBreaker}/>}
+                <NaturalMedicineCard
+                    title={"Cayennepeppar"}
+                    idName="cayennepepper"
+                    effectsContent={<CayennepepperContent.Effects/>}
+                    recipeContent={null}
+                    treatmentContent={<CayennepepperContent.Treatment/>}
+                />
+                <NaturalMedicineCard
+                    title={"Hostmedicin"}
+                    idName="coughmedicine"
+                    effectsContent={null}
+                    recipeContent={<CoughmedicineContent.Recipe/>}
+                    treatmentContent={<CoughmedicineContent.Treatment/>}
+                />
+                <NaturalMedicineCard
+                    title={"Öroninflammation"}
+                    idName="otitis"
+                    effectsContent={null}
+                    recipeContent={<OtitisContent.Recipe/>}
+                    treatmentContent={<OtitisContent.Treatment/>}
+                />
+                {viewportWidth < BREAKPOINT_DESKTOP && <hr className={Styles.ThirdsBreaker}/>}
+                <NaturalMedicineCard
+                    title={"Hosta"}
+                    idName="cough"
+                    effectsContent={null}
+                    recipeContent={<CoughContent.Recipe/>}
+                    treatmentContent={<CoughContent.Treatment/>}
+                />
+                <NaturalMedicineCard
+                    title={"Halsont"}
+                    idName="sore-throat"
+                    effectsContent={null}
+                    recipeContent={null}
+                    treatmentContent={<SoreThroatContent.Treatment/>}
+                />
+                <NaturalMedicineCard
+                    title={"Ingefära Shot"}
+                    idName="ginger-shot"
+                    effectsContent={null}
+                    recipeContent={<GingerShotContent.Recipe/>}
+                    treatmentContent={null}
+                />
+                {viewportWidth < BREAKPOINT_DESKTOP && <hr className={Styles.ThirdsBreaker}/>}
+                <NaturalMedicineCard
+                    title={"Cikoriarot"}
+                    idName="chicoryroot"
+                    effectsContent={<ChicoryrootContent.Effects/>}
+                    recipeContent={null}
+                    treatmentContent={null}
+                />
+                <NaturalMedicineCard
+                    title={"Carob"}
+                    idName="carob"
+                    effectsContent={<CarobContent.Effects/>}
+                    recipeContent={null}
+                    treatmentContent={null}
+                />
+                <NaturalMedicineCard
+                    title={"Chaga Sprängticka"}
+                    idName="chaga"
+                    effectsContent={<ChagaContent.Effects/>}
+                    recipeContent={null}
+                    treatmentContent={null}
+                />
+            </Masonry>
+
             <NavigationTable/>
         </div>
     )

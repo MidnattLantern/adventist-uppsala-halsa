@@ -1,0 +1,9 @@
+.MasonryGrid {
+    display: flex;
+}
+
+.MasonryGridColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
