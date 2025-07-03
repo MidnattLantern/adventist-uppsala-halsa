@@ -14,11 +14,13 @@
     color: var(--color-theme-primary);
     text-align: center;
 }
+/*
 .AlternativeTitle {
     font-family: var(--font-theme-primary);
     color: var(--color-white);
     text-shadow: 0px 1px 1px var(--color-shadow);
 }
+    */
 
 
 .Paragraph {
@@ -26,6 +28,7 @@
     color: var(--color-text-paragraph);
     margin-top: 10px;
 }
+/*
 .AlternativeParagraph,
 .AlternativeListItem {
     font-family: var(--font-theme-secondary);
@@ -36,7 +39,9 @@
     text-shadow: 0px 1px 1px var(--color-shadow);
     font-weight: 500;
 }
+    */
 
+    /*
 .AlternativeListItem {
     margin-left: 40px;
 }
@@ -45,6 +50,7 @@
     font-family: var(--font-theme-secondary);
     color: var(--color-theme-secondary);
 }
+*/
 
 .TableSize {
     width: calc(100% - 50px);

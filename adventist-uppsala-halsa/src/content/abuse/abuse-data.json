@@ -1,0 +1,62 @@
+{
+    "sugar": {
+        "id": "sugar",
+        "title": "Socker",
+        "photoCredit": {
+            "name": "Daniel Kraus",
+            "nameURL": "https://unsplash.com/@bovender?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+            "source": "Unsplash",
+            "sourceURL": "https://unsplash.com/photos/a-pile-of-sugar-cubes-sitting-on-top-of-each-other-TXVntZ190Ao?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        }
+    },
+    "caffeine": {
+        "id": "caffeine",
+        "title": "Koffein",
+        "photoCredit": {
+            "name": "Anastasiia Chepinska",
+            "nameURL": "https://unsplash.com/@anastasiiachepinska?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+            "source": "Unsplash",
+            "sourceURL": "https://unsplash.com/photos/brown-coffee-beans-on-brown-wooden-table-lcfH0p6emhw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        }
+    },
+    "nicotine": {
+        "id": "nicotine",
+        "title": "Nikotin",
+        "photoCredit": {
+            "name": "Irina Iriser",
+            "nameURL": "https://unsplash.com/@iriser?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+            "source": "Unsplash",
+            "sourceURL": "https://unsplash.com/photos/person-holding-white-cigarette-stick-Pdty4SxW-2E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        }
+    },
+    "alcohol": {
+        "id": "alcohol",
+        "title": "Alkohol",
+        "photoCredit": {
+            "name": "Rick Barrett",
+            "nameURL": "https://unsplash.com/@weareambitious?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+            "source": "Unsplash",
+            "sourceURL": "https://unsplash.com/photos/clear-drinking-glass-on-white-table-TSkUCyCuVH4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        }
+    },
+    "phone-addiction": {
+        "id": "phone-addiction",
+        "title": "Mobilberoende",
+        "photoCredit": {
+            "name": "Nathan Dumlao",
+            "nameURL": "https://unsplash.com/@nate_dumlao?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+            "source": "Unsplash",
+            "sourceURL": "https://unsplash.com/photos/white-samsung-android-smartphone-on-brown-wooden-table-kLmt1mpGJVg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        }
+    },
+    "food": {
+        "id": "food",
+        "title": "Mat",
+        "photoCredit": {
+            "name": "Ashley Green",
+            "nameURL": "https://unsplash.com/@amgee88?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash",
+            "source": "Unsplash",
+            "sourceURL": "https://unsplash.com/photos/burgers-and-fries-inside-box-UbTUTDRqj-o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+        }
+    }
+}

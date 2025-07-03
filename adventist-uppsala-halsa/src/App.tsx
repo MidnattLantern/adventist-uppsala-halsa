@@ -42,19 +42,19 @@ results.forEach(result => {
 
       <main className={Styles.MainContainer}>
 
-        <Dropdown title='8 HÄLSONYCKLAR' expandedByDefault={true} id="eight-health-keys">
+        <Dropdown title='8 HÄLSONYCKLAR' expandedByDefault={false} id="eight-health-keys">
           <EightHealthKeysWrapper />
         </Dropdown>
 
-        <Dropdown title='VILKA ÄR VI?' expandedByDefault={true} id="about-us">
+        <Dropdown title='VILKA ÄR VI?' expandedByDefault={false} id="about-us">
           <AboutUsWrapper/>
         </Dropdown>
 
-        <Dropdown title='FÖRKYLNING & NATURLIG BEHANDLING' expandedByDefault={true} id="natural-medicine-wrapper">
+        <Dropdown title='FÖRKYLNING & NATURLIG BEHANDLING' expandedByDefault={false} id="natural-medicine-wrapper">
           <NaturalMedicineWrapper/>
         </Dropdown>
 
-        <Dropdown title='MISSBRUK' expandedByDefault={false} id="abuse">
+        <Dropdown title='MISSBRUK' expandedByDefault={true} id="abuse">
           <AbuseWrapper />
         </Dropdown>
 

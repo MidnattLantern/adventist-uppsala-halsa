@@ -1,0 +1,26 @@
+.SectionView {
+    background-color: var(--color-dark);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 2.5px;
+}
+
+.Title {
+    font-family: var(--font-theme-primary);
+    color: var(--color-theme-primary);
+    text-align: center;
+}
+
+.Paragraph,
+.ExternalLink,
+.ListItem {
+    font-family: var(--font-theme-secondary);
+    color: var(--color-white);
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.ExternalLink {
+    font-family: var(--font-theme-secondary);
+    color: var(--color-theme-secondary);
+}
