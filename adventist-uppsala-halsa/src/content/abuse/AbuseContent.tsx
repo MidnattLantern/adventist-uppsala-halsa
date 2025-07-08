@@ -9,6 +9,7 @@ type AbuseContentType = {
     Food: React.FC;
 }
 
+// abuse
 const Sugar = () => {
     return(<>
         <div className={Styles.SectionView}>
@@ -72,20 +73,20 @@ const Alcohol = () => {
 const PhoneAddiction = () => {
     return(<>
         <div className={Styles.SectionView}>
-            <p className={Styles.Paragraph}>Ett enkelt mobilberoendetest är att stänga av mobilen, och se vad som händer.</p>
-            <p className={Styles.Paragraph}>Hur mår du, hur reagerar du på att inte använda mobilen på en eller två dagar.</p>
-            <p className={Styles.Paragraph}>Om du använder din mobil intensivt varje dag så kan vissa delar av din hjärna krympa.</p>
-            <p className={Styles.Paragraph}>Det finns också risk för att stressnivåerna i din kropp kan öka på grund av din smartphone.</p>
-            <p className={Styles.Paragraph}>Går det att bota mobilberoende?</p>
-            <p className={Styles.Paragraph}>Läs mer: <a className={Styles.ExternalLink} target="_blank" rel="noreferrer" href="https://axelsons.se/mobilberoende/">axelsons.se/mobilberoende</a></p>
+            <p className={Styles.Paragraph}>{"Ett enkelt mobilberoendetest är att stänga av mobilen, och se vad som händer."}</p>
+            <p className={Styles.Paragraph}>{"Hur mår du? Hur reagerar du på att inte använda mobilen på en eller två dagar?"}</p>
+            <p className={Styles.Paragraph}>{"Om du använder din mobil intensivt varje dag så kan vissa delar av din hjärna krympa."}</p>
+            <p className={Styles.Paragraph}>{"Det finns också risk för att stressnivåerna i din kropp kan öka på grund av din smartphone."}</p>
+            <p className={Styles.Paragraph}>{"Går det att bota mobilberoende?"}</p>
+            <p className={Styles.Paragraph}>{"Läs mer: "}<a className={Styles.ExternalLink} target="_blank" rel="noreferrer" href="https://axelsons.se/mobilberoende/">{"axelsons.se/mobilberoende"}</a></p>
         </div>
     </>)
 };
 const Food = () => {
     return(<>
         <div className={Styles.SectionView}>
-            <p className={Styles.Paragraph}>Dopamin utsöndras när vi äter mat, så den härliga känslan kan motverka vårt välbefinnande. Dåliga kostvanor, övervikt och fetma påverkar oss väldigt negativt, och leder till livsstilssjukdomar.  </p>
-            <p className={Styles.Paragraph}>För mycket socker och mättade fettsyror kan minska dopaminproduktionen.</p>
+            <p className={Styles.Paragraph}>{"Dopamin utsöndras när vi äter mat, så den härliga känslan kan motverka vårt välbefinnande. Dåliga kostvanor, övervikt och fetma påverkar oss väldigt negativt, och leder till livsstilssjukdomar."}</p>
+            <p className={Styles.Paragraph}>{"För mycket socker och mättade fettsyror kan minska dopaminproduktionen."}</p>
         </div>
     </>)
 };

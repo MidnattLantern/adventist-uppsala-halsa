@@ -1,5 +1,4 @@
-// work in progress -Alma
-import Styles from "./PhoneViewAddictionCard.module.css";
+import Styles from "./LargeViewAddictionCard.module.css";
 import ClickableImage from "../../../../components/ClickableImage/ClickableImage";
 import { MapAbuseImages } from "../../../../assets/images/MapAbuseImages";
 import { ReactNode } from "react";
@@ -17,7 +16,7 @@ type AddictionContent = {
     photoCredit: PhotoCredit;
 };
 
-const PhoneViewAddictionCard = ({
+const LargeViewAddictionCard = ({
     children,
     contentData,
     isExpanded,
@@ -56,30 +55,39 @@ const PhoneViewAddictionCard = ({
         return (
             <div className={Styles.PhotoCreditsView}>
                 <p className={Styles.PhotoCredits}>
-                    {" Foto av "} <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.nameURL}>{contentData.photoCredit.name}</a>
+                    {" Foto av "}
                 </p>
+                <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.nameURL}>{contentData.photoCredit.name}</a>
+
+                <div style={{'margin': '8px'}} // <br/>
+                />
+
                 <p className={Styles.PhotoCredits}>
-                    {" Från "} <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.sourceURL}>{contentData.photoCredit.source}</a>
+                    {" Från "}
+                    <a className={Styles.PhotoCreditsLink} target="_blank" rel="noreferrer" href={contentData.photoCredit.sourceURL}>{contentData.photoCredit.source}</a>
                 </p>
             </div>
         )
     };
 
     return (
-        <div className={Styles.PhoneViewAddictionCardView}>
+        <div className={Styles.LargeViewAddictionCardView}>
             <ImageAsCardBackground source={image} />
-            <div className={Styles.HealthCardView}>
-                <div className={`${Styles.TitleAndContentContainer} ${isExpanded && Styles.ExpandedTitleAndContentContainer}`}>
-                    <h1 className={Styles.WaterCardHeader}>{contentData.title}</h1>
-                    {isExpanded && <ExpandedContent/>}
+            <div className={Styles.AddictionCardView}>
+                <div className={`${Styles.TitleAndContentContainer} ${isExpanded && Styles.ExpandedPhoneContentCardContainer}`}>
+                    <button className={Styles.ButtonFrame} onClick={() => {setIsExpanded(!isExpanded)}}><p>{isExpanded ? "Stäng" : "Läs mer"}</p></button>
+                    <h1 className={Styles.CardHeader}>{contentData.title}</h1>
+                    <PhotoCredits />
                 </div>
                 <div className={Styles.ClickableImageContainer}>
-                    <ClickableImage onClick={() => {setIsExpanded(!isExpanded)}} src={image}>{"Läs mer"}</ClickableImage>
+                    <div className={`${Styles.LargeViewExpandedContentContainer} ${isExpanded && Styles.ExpandedLargeViewExpandedContentContainer}`}>
+                        <ExpandedContent />
+                    </div>
+                    <ClickableImage onClick={() => {setIsExpanded(!isExpanded)}} src={image}>Läs mer</ClickableImage>
                 </div>
             </div>
-            <PhotoCredits />
         </div>
     )
 };
 
-export default PhoneViewAddictionCard;
+export default LargeViewAddictionCard;
