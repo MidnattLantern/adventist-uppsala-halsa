@@ -7,7 +7,14 @@
 
 .Title {
     font-family: var(--font-theme-primary);
-    color: var(--color-text-title);
+    color: var(--color-theme-primary);
+    text-align: center;
+}
+
+.LineBreak {
+    border: 1px solid var(--color-theme-primary);
+    width: 85%;
+    margin-top: 50px;
 }
 
 .Paragraph {
