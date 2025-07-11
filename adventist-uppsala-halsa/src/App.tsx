@@ -58,11 +58,11 @@ results.forEach(result => {
           <AbuseWrapper />
         </Dropdown>
 
-        <Dropdown title='HÄLSA FÖR NERVSYSTEMET' expandedByDefault={true} id="nervous-system-health-wrapper">
+        <Dropdown title='HÄLSA FÖR NERVSYSTEMET' expandedByDefault={false} id="nervous-system-health-wrapper">
           <NervousSystemHealthWrapper />
         </Dropdown>
 
-        <Dropdown title="ÖRTER TILL MÄNNISKANS TJÄNST" expandedByDefault={false} id="herbs-for-humans">
+        <Dropdown title="ÖRTER TILL MÄNNISKANS TJÄNST" expandedByDefault={true} id="herbs-for-humans">
           <HerbsForHumansWrapper />
         </Dropdown>
 

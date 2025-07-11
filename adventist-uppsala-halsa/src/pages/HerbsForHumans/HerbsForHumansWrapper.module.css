@@ -1,13 +1,25 @@
 .HerbsForHumansWrapperView {
     display: flex;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     padding: 40px;
 }
 
+.HerbInfoView {
+    width: 85%;
+}
+
 .Title {
     font-family: var(--font-theme-primary);
-    color: var(--color-text-title);
+    color: var(--color-theme-primary);
+    text-align: center;
+}
+
+.LineBreak {
+    border: 1px solid var(--color-theme-primary);
+    width: 85%;
+    margin-top: 50px;
 }
 
 .Paragraph {
