@@ -42,23 +42,23 @@ results.forEach(result => {
 
       <main className={Styles.MainContainer}>
 
-        <Dropdown title='8 HÄLSONYCKLAR' expandedByDefault={false} id="eight-health-keys">
+        <Dropdown title='8 HÄLSONYCKLAR' expandedByDefault={true} id="eight-health-keys">
           <EightHealthKeysWrapper />
         </Dropdown>
 
-        <Dropdown title='VILKA ÄR VI?' expandedByDefault={false} id="about-us">
+        <Dropdown title='VILKA ÄR VI?' expandedByDefault={true} id="about-us">
           <AboutUsWrapper/>
         </Dropdown>
 
-        <Dropdown title='FÖRKYLNING & NATURLIG BEHANDLING' expandedByDefault={false} id="natural-medicine-wrapper">
+        <Dropdown title='FÖRKYLNING & NATURLIG BEHANDLING' expandedByDefault={true} id="natural-medicine-wrapper">
           <NaturalMedicineWrapper/>
         </Dropdown>
 
-        <Dropdown title='MISSBRUK' expandedByDefault={false} id="abuse">
+        <Dropdown title='MISSBRUK' expandedByDefault={true} id="abuse">
           <AbuseWrapper />
         </Dropdown>
 
-        <Dropdown title='HÄLSA FÖR NERVSYSTEMET' expandedByDefault={false} id="nervous-system-health-wrapper">
+        <Dropdown title='HÄLSA FÖR NERVSYSTEMET' expandedByDefault={true} id="nervous-system-health-wrapper">
           <NervousSystemHealthWrapper />
         </Dropdown>
 
@@ -66,7 +66,7 @@ results.forEach(result => {
           <HerbsForHumansWrapper />
         </Dropdown>
 
-        <Dropdown title='1:a HJÄLPEN KIT' expandedByDefault={false} id="first-aid-kit">
+        <Dropdown title='1:a HJÄLPEN KIT' expandedByDefault={true} id="first-aid-kit">
           <FirstAidKitWrapper />
         </Dropdown>
 
