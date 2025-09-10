@@ -112,6 +112,29 @@ const AbuseWrapper = () => {
                 <RecipeContent.DateBallsInstructions/>
             </>}
             />
+
+            <RecipeCard
+            idName="weed-pesto"
+            title="Ogräspesto"
+            ingredientsContent={<>
+                <RecipeContent.WeedPestoIngredients/>
+            </>}
+            instructionsContent={<>
+                <RecipeContent.WeedPestoInstructions/>
+            </>}
+            />
+
+            <RecipeCard
+            idName="fried-dandelion-buds"
+            title="Stekta Maskrosknoppas"
+            ingredientsContent={<>
+                <RecipeContent.FriedDandelionBudsIngredients/>
+            </>}
+            instructionsContent={<>
+                <RecipeContent.FriedDandelionBudsInstructions/>
+            </>}
+            />
+
             </Masonry>
         </div>
     )

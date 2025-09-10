@@ -5,6 +5,11 @@ type RecipeContentType = {
     CoconutCookiesInstructions: React.FC;
     DateBallsIngredients: React.FC;
     DateBallsInstructions: React.FC;
+    WeedPestoIngredients: React.FC;
+    WeedPestoInstructions: React.FC;
+    FriedDandelionBudsIngredients: React.FC;
+    FriedDandelionBudsInstructions: React.FC;
+
 };
 
 const CoconutCookiesIngredients = () => {
@@ -63,16 +68,70 @@ const DateBallsInstructions = () => {
     )
 };
 
+const WeedPestoIngredients = () => {
+    return(
+        <div className={`${Styles.SectionView} ${Styles.TableSize}`}>
+            <li className={Styles.Paragraph}>{"1 dl solroskärnor"}</li>
+            <li className={Styles.Paragraph}>{"3 dl hackad späd kirskål"}</li>
+            <li className={Styles.Paragraph}>{"1 dl hackad späd brännässla"}</li>
+            <li className={Styles.Paragraph}>{"Näringsjäst"}</li>
+            <li className={Styles.Paragraph}>{"Himalajasalt"}</li>
+            <li className={Styles.Paragraph}>{"Olivolja"}</li>
+        </div>
+    )
+};
+
+const WeedPestoInstructions = () => {
+    return(
+        <div className={Styles.SectionView}>
+            <p className={Styles.Paragraph}>{"Mixa solroskärnor och ogräs, var för sig"}</p>
+            <p className={Styles.Paragraph}>{"Rör i näringsjäst och olivolja till en bra konsistens"}</p>
+            <p className={Styles.Paragraph}>{"Smaka av med himalajasalt"}</p>
+        </div>
+    )
+};
+
+const FriedDandelionBudsIngredients = () => {
+    return(
+        <div className={`${Styles.SectionView} ${Styles.TableSize}`}>
+            <li className={Styles.Paragraph}>{"Späda maskrosknoppar"}</li>
+            <li className={Styles.Paragraph}>{"Vitlök"}</li>
+            <li className={Styles.Paragraph}>{"Himalajasalt"}</li>
+            <li className={Styles.Paragraph}>{"Näringsjäst"}</li>
+            <li className={Styles.Paragraph}>{"Himalajasalt"}</li>
+            <li className={Styles.Paragraph}>{"Kokosolja — neutral smak"}</li>
+        </div>
+    )
+};
+
+const FriedDandelionBudsInstructions = () => {
+    return(
+        <div className={Styles.SectionView}>
+            <p className={Styles.Paragraph}>{"Ta bort stjälken från maskrosknoppen — för att slippa besk smak"}</p>
+            <p className={Styles.Paragraph}>{"Stek maskrosknopparna med pressad vitlök i kokosolja"}</p>
+            <p className={Styles.Paragraph}>{"Krydda med salt"}</p>
+        </div>
+    )
+};
+
 const RecipeContent: RecipeContentType = {
     CoconutCookiesIngredients,
     CoconutCookiesInstructions,
     DateBallsIngredients,
-    DateBallsInstructions
+    DateBallsInstructions,
+    WeedPestoIngredients,
+    WeedPestoInstructions,
+    FriedDandelionBudsIngredients,
+    FriedDandelionBudsInstructions
 };
 
 RecipeContent.CoconutCookiesIngredients = CoconutCookiesIngredients;
 RecipeContent.CoconutCookiesInstructions = CoconutCookiesInstructions;
 RecipeContent.DateBallsIngredients = DateBallsIngredients;
 RecipeContent.DateBallsInstructions = DateBallsInstructions;
+RecipeContent.WeedPestoIngredients = WeedPestoIngredients;
+RecipeContent.WeedPestoInstructions = WeedPestoInstructions;
+RecipeContent.FriedDandelionBudsIngredients = FriedDandelionBudsIngredients;
+RecipeContent.FriedDandelionBudsInstructions = FriedDandelionBudsInstructions;
 
 export default RecipeContent;
