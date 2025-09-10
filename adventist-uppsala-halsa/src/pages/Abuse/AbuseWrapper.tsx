@@ -128,7 +128,7 @@ const AbuseWrapper = () => {
 
                 <RecipeCard
                 idName="fried-dandelion-buds"
-                title="Stekta Maskrosknoppas"
+                title="Stekta Maskrosknoppar"
                 ingredientsContent={<>
                     <RecipeContent.FriedDandelionBudsIngredients/>
                 </>}
