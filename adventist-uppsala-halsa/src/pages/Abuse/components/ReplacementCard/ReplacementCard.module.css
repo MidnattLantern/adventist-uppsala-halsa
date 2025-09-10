@@ -1,4 +1,4 @@
-.RecipeCardView {
+.ReplacementCardView {
     width: calc(100% - 20px);
     text-align: left;
     box-shadow: inset 0px 0px 5px var(--color-shadow);
@@ -63,7 +63,7 @@
 }
 
 @media (min-width: 1280px) {
-    .RecipeCardView {
+    .NaturalMedicineCardView {
         width: calc(100% - 20px);
     }
 }

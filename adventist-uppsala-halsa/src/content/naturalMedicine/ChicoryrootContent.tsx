@@ -1,3 +1,4 @@
+// This components has been moved to the `content > abuse` directory
 import Styles from "./NaturalMedicine.module.css";
 
 type ChicoryrootContentType = {

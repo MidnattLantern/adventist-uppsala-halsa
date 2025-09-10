@@ -102,28 +102,7 @@ const NaturalMedicineWrapper = () => {
                     recipeContent={<GingerShotContent.Recipe/>}
                     treatmentContent={null}
                 />
-                {viewportWidth < BREAKPOINT_DESKTOP && <hr className={Styles.ThirdsBreaker}/>}
-                <NaturalMedicineCard
-                    title={"Cikoriarot"}
-                    idName="chicoryroot"
-                    effectsContent={<ChicoryrootContent.Effects/>}
-                    recipeContent={null}
-                    treatmentContent={null}
-                />
-                <NaturalMedicineCard
-                    title={"Carob"}
-                    idName="carob"
-                    effectsContent={<CarobContent.Effects/>}
-                    recipeContent={null}
-                    treatmentContent={null}
-                />
-                <NaturalMedicineCard
-                    title={"Chaga Sprängticka"}
-                    idName="chaga"
-                    effectsContent={<ChagaContent.Effects/>}
-                    recipeContent={null}
-                    treatmentContent={null}
-                />
+
             </Masonry>
 
             <NavigationTable/>

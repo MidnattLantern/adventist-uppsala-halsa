@@ -10,6 +10,8 @@ import AbuseContent from "../../content/abuse/AbuseContent";
 import { useViewPortContext } from "../../contexts/useViewportContext";
 import RecipeCard from "./components/RecipeCard/RecipeCard";
 import RecipeContent from "../../content/abuse/RecipeContent";
+import ReplacementCard from "./components/ReplacementCard/ReplacementCard";
+import ReplacementContent from "../../content/abuse/ReplacementContent";
 
 const AbuseWrapper = () => {
     const { viewportWidth } = useViewPortContext();
@@ -91,50 +93,77 @@ const AbuseWrapper = () => {
             className={MasonryStyles.MasonryGrid}
             columnClassName={MasonryStyles.MasonryGridColumn}
             >
-            <RecipeCard
-            idName="coconut-cookies"
-            title="Kokoskakor"
-            ingredientsContent={<>
-                <RecipeContent.CoconutCookiesIngredients/>
-            </>}
-            instructionsContent={<>
-                <RecipeContent.CoconutCookiesInstructions/>
-            </>}
-            />
+                <RecipeCard
+                idName="coconut-cookies"
+                title="Kokoskakor"
+                ingredientsContent={<>
+                    <RecipeContent.CoconutCookiesIngredients/>
+                </>}
+                instructionsContent={<>
+                    <RecipeContent.CoconutCookiesInstructions/>
+                </>}
+                />
 
-            <RecipeCard
-            idName="date-balls"
-            title="Dadelboller"
-            ingredientsContent={<>
-                <RecipeContent.DateBallsIngredients/>
-            </>}
-            instructionsContent={<>
-                <RecipeContent.DateBallsInstructions/>
-            </>}
-            />
+                <RecipeCard
+                idName="date-balls"
+                title="Dadelboller"
+                ingredientsContent={<>
+                    <RecipeContent.DateBallsIngredients/>
+                </>}
+                instructionsContent={<>
+                    <RecipeContent.DateBallsInstructions/>
+                </>}
+                />
 
-            <RecipeCard
-            idName="weed-pesto"
-            title="Ogräspesto"
-            ingredientsContent={<>
-                <RecipeContent.WeedPestoIngredients/>
-            </>}
-            instructionsContent={<>
-                <RecipeContent.WeedPestoInstructions/>
-            </>}
-            />
+                <RecipeCard
+                idName="weed-pesto"
+                title="Ogräspesto"
+                ingredientsContent={<>
+                    <RecipeContent.WeedPestoIngredients/>
+                </>}
+                instructionsContent={<>
+                    <RecipeContent.WeedPestoInstructions/>
+                </>}
+                />
 
-            <RecipeCard
-            idName="fried-dandelion-buds"
-            title="Stekta Maskrosknoppas"
-            ingredientsContent={<>
-                <RecipeContent.FriedDandelionBudsIngredients/>
-            </>}
-            instructionsContent={<>
-                <RecipeContent.FriedDandelionBudsInstructions/>
-            </>}
-            />
+                <RecipeCard
+                idName="fried-dandelion-buds"
+                title="Stekta Maskrosknoppas"
+                ingredientsContent={<>
+                    <RecipeContent.FriedDandelionBudsIngredients/>
+                </>}
+                instructionsContent={<>
+                    <RecipeContent.FriedDandelionBudsInstructions/>
+                </>}
+                />
 
+            </Masonry>
+
+            <h1 className={Styles.Title}>{"ERSÄTTNING"}</h1>
+
+            <Masonry
+            breakpointCols={{
+                default: 2,
+                1280: 1 //BREAKPOINT_DESKTOP
+            }}
+            className={MasonryStyles.MasonryGrid}
+            columnClassName={MasonryStyles.MasonryGridColumn}
+            >
+                <ReplacementCard
+                    title={"Cikoriarot"}
+                    idName="chicoryroot"
+                    content={<ReplacementContent.ChicoryrootContent/>}
+                />
+                <ReplacementCard
+                    title={"Carob"}
+                    idName="carob"
+                    content={<ReplacementContent.ChagaContent/>}
+                />
+                <ReplacementCard
+                    title={"Chaga Sprängticka"}
+                    idName="chaga"
+                    content={<ReplacementContent.CarobContent/>}
+                />
             </Masonry>
         </div>
     )

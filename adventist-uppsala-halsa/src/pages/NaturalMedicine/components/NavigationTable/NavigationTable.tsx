@@ -21,11 +21,6 @@ const NavigationTable = () => {
                     <a className={Styles.NavLink} href="#sore-throat">{"Halsont"}</a>
                     <a className={Styles.NavLink} href="#ginger-shot">{"Ingefära shot"}</a>
                 </td>
-                <td className={Styles.NavLinkSection}>
-                    <a className={Styles.NavLink} href="#chicoryroot">{"Cikoriarot"}</a>
-                    <a className={Styles.NavLink} href="#carob">{"Carob"}</a>
-                    <a className={Styles.NavLink} href="#chaga">{"Chaga Sprängticka"}</a>
-                </td>
             </tr>
         </table>
     )

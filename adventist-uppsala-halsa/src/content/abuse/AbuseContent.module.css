@@ -18,7 +18,7 @@
 }
 
 .Paragraph,
-.AlternativeListItem {
+.ListItem {
     font-family: var(--font-theme-secondary);
     color: var(--color-white);
     margin-left: 25px;
@@ -28,7 +28,7 @@
     font-weight: 500;
 }
 
-.AlternativeListItem {
+.ListItem {
     margin-left: 40px;
 }
 
@@ -55,4 +55,8 @@
 }
 .NavLink:hover {
     color: var(--color-cave);
+}
+
+.AlternativeParagraph{
+
 }
