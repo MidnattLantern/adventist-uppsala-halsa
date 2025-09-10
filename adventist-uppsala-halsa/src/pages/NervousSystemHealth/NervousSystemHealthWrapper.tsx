@@ -207,6 +207,20 @@ const NervousSystemHealthWrapper = () => {
     const Paragraph38 = () => {
         return <p className={Styles.Paragraph}><strong>Rådgör med din läkare!</strong></p>
     };
+    const Paragraph39 = () => {
+        return <>
+                <p className={Styles.Paragraph}><strong><a className={Styles.InternalLink} href="#eight-health-keys">8 hälsonycklar</a> kan bromsa nervsjukdomars utveckling</strong></p>
+                <li className={Styles.Paragraph}>Träning</li>
+                <li className={Styles.Paragraph}>Växtbaserad kost (helst närodlad)</li>
+                <li className={Styles.Paragraph}>Undvik skadliga animaliska oljor som margarin och fritösolja</li>
+                <br/>
+                <li className={Styles.Paragraph}>Uteslut de 5 allergenerna: jordnötter, vete, havre, socker och mejeriprodukter under en period av minst tre månader</li>
+                <li className={Styles.Paragraph}>Undvik kemikalier och gifter.</li>
+                <li className={Styles.Paragraph}>Rena kroppen genom att fasta. Naturliga klorofyllbaserade renare, dvs gröna blad, tex sallad, grönkål och mangold. eliminerar gifter som lagrats i kroppen.</li>
+                <br/>
+                <li className={Styles.Paragraph}>Träkol. </li>
+        </>
+    }
 
     return(
         <div className={Styles.NervousSystemHealthWrapperView}>
@@ -219,7 +233,7 @@ const NervousSystemHealthWrapper = () => {
 
             <hr className={Styles.LineBreak}/>
             <h1 className={Styles.Title}>SJUKDOMAR I NERVSYSTEMET</h1>
-            <ZigZag contentData={[ Paragraph23, Paragraph24, Paragraph25, Paragraph26, Paragraph27, Paragraph28, Paragraph29, Paragraph30, Paragraph31, Paragraph23, Paragraph33, Paragraph34, Paragraph35, Paragraph36, Paragraph37, Paragraph38 ]}/>
+            <ZigZag contentData={[ Paragraph23, Paragraph24, Paragraph25, Paragraph26, Paragraph27, Paragraph28, Paragraph29, Paragraph30, Paragraph31, Paragraph23, Paragraph33, Paragraph34, Paragraph35, Paragraph36, Paragraph37, Paragraph38, Paragraph39 ]}/>
         </div>
     )
 };

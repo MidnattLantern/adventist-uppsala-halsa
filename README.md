@@ -303,3 +303,5 @@ mv oldName newName
 
 There is no search functionality yet, a fututre iteration of fuse.js is likely to happen
 https://www.fusejs.io/
+
+When making commits, it's safest to avoid using `git add .` and commit each file individually `git add ../path/to/changes` this ensure minimal unexpected issues. You can see a list of uncommitted files with the command `git status`.
