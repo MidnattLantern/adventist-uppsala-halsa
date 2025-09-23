@@ -1,0 +1,112 @@
+.NavigationBarView {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: calc(100% - 20px);
+    height: auto;
+    padding: 10px;
+}
+
+.BurgerCloseExpandButton {
+    position: relative;
+    transition: all 0.3s ease;
+    bottom: 0px;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--color-dark-transparent);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 2px 4px var(--color-shadow);
+    border: 1px solid var(--color-white-transparent);
+}
+.BurgerCloseIconColor {
+    transition: all 0.3s ease;
+    fill: var(--color-white-transparent);
+}
+
+.BurgerCloseExpandButton:hover {
+    transition: all 0.3s ease;
+    border-color: var(--color-theme-secondary-light);
+}
+.BurgerCloseExpandButton:hover .BurgerCloseIconColor {
+    transition: all 0.3s ease;
+    fill: var(--color-theme-secondary-light);
+}
+
+.BurgerCloseExpandButton:active {
+    transition: all 0.3s ease;
+    border-color: var(--color-white);
+    box-shadow: inset 0px 0px 4px var(--color-shadow);
+}
+.BurgerCloseExpandButton:active .BurgerCloseIconColor {
+    transition: all 0.3s ease;
+    fill: var(--color-white);
+}
+
+.LinksView {
+    transition: all 0.5s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 10px;
+    width: calc(100% - 10px);
+    height: 0px;
+    background-color: var(--color-dark-transparent);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--color-white-transparent);
+    border-radius: 30px;
+    opacity: 0;
+}
+.LinksViewExpanded {
+    transition: all 0.5s ease;
+    height: fit-content;
+    opacity: 1;
+}
+
+.LinkIconSize {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+    fill: var(--color-theme-primary-light)
+}
+
+.HomeLink {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    color: var(--color-theme-primary-light);
+    text-shadow: 0px 1px 1px var(--color-shadow);
+    font-size: 20px;
+    width: calc(100% - 0px);
+    height: fit-content;
+    padding: 10px;
+    font-family: var(--font-theme-secondary);
+    font-weight: 700;
+}
+
+.Link {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    color: var(--color-theme-primary-light);
+    text-shadow: 0px 1px 1px var(--color-shadow);
+    font-size: 20px;
+    width: calc(100% - 0px);
+    height: fit-content;
+    padding: 10px;
+    font-family: var(--font-theme-secondary);
+    font-weight: 550;
+}
+
+.LineBreak {
+    width: 90%;
+    border: 0.5px solid var(--color-dark-transparent);
+}

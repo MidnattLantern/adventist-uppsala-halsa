@@ -27,7 +27,6 @@ const paragraphs = [
   Paragraph11,
 ];
 
-// magic numbers
 const FIRST_PARAGRAPH = 0;
 const BREAK_PARAGRAPH = 5;
 const LAST_PARAGRAPH = paragraphs.length;
@@ -47,7 +46,7 @@ const AboutUsWrapper = () => {
             </div>
         )
     };
-    const ZigZag = ({children} : {children?:ReactNode}) => { // Special flex-wrap behaviour for desktop view
+    const ZigZag = ({children} : {children?:ReactNode}) => {
         return(
             <div className={Styles.ZigZagView}>
                 {children}
@@ -55,7 +54,6 @@ const AboutUsWrapper = () => {
         )
     };
 
-    // iterator
     const renderParagraphs = (start: number, end: number) => {
         return(
             paragraphs.slice(start, end).map((Content, i) => 

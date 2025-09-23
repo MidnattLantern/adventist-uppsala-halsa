@@ -39,6 +39,7 @@ const EightHealthKeysWrapper = () => {
         columnClassName={MasonryStyles.MasonryGridColumn}
         >
 
+            {/*
             <HealthList
             setWaterExpanded={setWaterExpanded}
             setTemperanceExpanded={setTemperanceExpanded}
@@ -49,6 +50,7 @@ const EightHealthKeysWrapper = () => {
             setAirExpanded={setAirExpanded}
             setNutritionExpanded={setNutritionExpanded}
             />
+            */}
 
             <div id="water">
             {viewportWidth < VIEWPORT_BREAKPOINT ?
@@ -171,17 +173,6 @@ const EightHealthKeysWrapper = () => {
                 />
             }
             </div>
-
-            <HealthList
-            setWaterExpanded={setWaterExpanded}
-            setTemperanceExpanded={setTemperanceExpanded}
-            setExersiceExpanded={setExersiceExpanded}
-            setSunshineExpanded={setSunshineExpanded}
-            setRestExpanded={setRestExpanded}
-            setTrustInGodExpanded={setTrustInGodExpanded}
-            setAirExpanded={setAirExpanded}
-            setNutritionExpanded={setNutritionExpanded}
-            />
 
             </Masonry>
 

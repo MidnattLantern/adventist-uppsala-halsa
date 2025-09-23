@@ -2,14 +2,26 @@ import Styles from "./Header.module.css";
 import Icon from "../../assets/logos/adventist-symbol-cave.png";
 import { ReactComponent as SearchIcon } from "../../assets/vector-icons/search-icon.svg"; //prebuilt margins
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+    /*
     const Logo = () => {
         return(
             <a href="https://uppsala.adventkyrka.se/" target="_blank" rel="noreferrer" className={Styles.Logo}>
                 <img className={Styles.LogoIcon} src={Icon} alt="logo"/>
                 <h1 className={Styles.LogoTitle}>Adventkyrkan</h1>
             </a>
+        )
+    };
+    */
+
+    const Logo = () => {
+        return(
+            <Link to="/" className={Styles.Logo}>
+                <img className={Styles.LogoIcon} src={Icon} alt="logo"/>
+                <h1 className={Styles.LogoTitle}>Adventkyrkan Hälsa</h1>
+            </Link>
         )
     };
 
@@ -45,7 +57,6 @@ const Header = () => {
     return(
         <div className={Styles.HeaderComponentContainer}>
             <Logo />
-            <SearchBar />
         </div>
     )
 };

@@ -11,6 +11,8 @@ import AbuseWrapper from './pages/Abuse/AbuseWrapper';
 import NervousSystemHealthWrapper from './pages/NervousSystemHealth/NervousSystemHealthWrapper';
 import HerbsForHumansWrapper from './pages/HerbsForHumans/HerbsForHumansWrapper';
 import FirstAidKitWrapper from './pages/FirstAidKit/FirstAidKitWrapper';
+import { Link, Route, Routes } from 'react-router-dom';
+import NavigationBar from './components/NavigationBar/NavigationBar';
 
 const App = () => {
   type HealthKeyCardContent = {
@@ -38,37 +40,77 @@ results.forEach(result => {
     <div className={Styles.AppContainer} data-testid="app-container">
       <header className={Styles.HeaderContainer} data-testid="header">
         <Header />
+        <NavigationBar />
       </header>
 
       <main className={Styles.MainContainer}>
 
-        <Dropdown title='8 HÄLSONYCKLAR' expandedByDefault={true} id="eight-health-keys">
-          <EightHealthKeysWrapper />
-        </Dropdown>
+        <Routes>
+          <Route path="/" element={<>
+            <Dropdown title='8 HÄLSONYCKLAR' expandedByDefault={true} id="eight-health-keys">
+              <EightHealthKeysWrapper />
+            </Dropdown>
 
-        <Dropdown title='VILKA ÄR VI?' expandedByDefault={true} id="about-us">
-          <AboutUsWrapper/>
-        </Dropdown>
+            <Dropdown title='VILKA ÄR VI?' expandedByDefault={true} id="about-us">
+              <AboutUsWrapper/>
+            </Dropdown>
 
-        <Dropdown title='FÖRKYLNING & NATURLIG BEHANDLING' expandedByDefault={true} id="natural-medicine-wrapper">
-          <NaturalMedicineWrapper/>
-        </Dropdown>
+            <Dropdown title='FÖRKYLNING & NATURLIG BEHANDLING' expandedByDefault={true} id="natural-medicine-wrapper">
+              <NaturalMedicineWrapper/>
+            </Dropdown>
 
-        <Dropdown title='MISSBRUK' expandedByDefault={true} id="abuse">
-          <AbuseWrapper />
-        </Dropdown>
+            <Dropdown title='MISSBRUK' expandedByDefault={true} id="abuse">
+              <AbuseWrapper />
+            </Dropdown>
 
-        <Dropdown title='HÄLSA FÖR NERVSYSTEMET' expandedByDefault={true} id="nervous-system-health-wrapper">
-          <NervousSystemHealthWrapper />
-        </Dropdown>
+            <Dropdown title='HÄLSA FÖR NERVSYSTEMET' expandedByDefault={true} id="nervous-system-health-wrapper">
+              <NervousSystemHealthWrapper />
+            </Dropdown>
 
-        <Dropdown title="ÖRTER TILL MÄNNISKANS TJÄNST" expandedByDefault={true} id="herbs-for-humans">
-          <HerbsForHumansWrapper />
-        </Dropdown>
+            <Dropdown title="ÖRTER TILL MÄNNISKANS TJÄNST" expandedByDefault={true} id="herbs-for-humans">
+              <HerbsForHumansWrapper />
+            </Dropdown>
 
-        <Dropdown title='1:a HJÄLPEN KIT' expandedByDefault={true} id="first-aid-kit">
-          <FirstAidKitWrapper />
-        </Dropdown>
+            <Dropdown title='1:a HJÄLPEN KIT' expandedByDefault={true} id="first-aid-kit">
+              <FirstAidKitWrapper />
+            </Dropdown>          
+          </>}/>
+
+          <Route path="*" element={<>
+              <h1>{"404"}</h1>
+              <h1>{"Sidan kunde inte hittas"}</h1>
+              <Link to="/">{"Klicka för att komma till startsidan"}</Link>
+            </>}/>
+
+          <Route path="/åtta-hälsonycklar" element={<>
+            <EightHealthKeysWrapper />
+          </>}/>
+
+          <Route path="/vilka-är-vi" element={<>
+            <AboutUsWrapper/>
+            </>}/>
+
+          <Route path="/förkylning-och-naturlig-behandling" element={<>
+            <NaturalMedicineWrapper/>
+          </>}/>
+
+          <Route path="/missbruk" element={<>
+            <AbuseWrapper />
+          </>}/>
+
+          <Route path="/hälsa-för-nervsystemet" element={<>
+            <NervousSystemHealthWrapper />
+          </>}/>
+
+          <Route path="/örter-till-människans-tjänst" element={<>
+            <HerbsForHumansWrapper />
+          </>}/>
+
+          <Route path="/första-hjälpen-kit" element={<>
+            <FirstAidKitWrapper />
+          </>}/>
+
+        </Routes>
 
       </main>
 
