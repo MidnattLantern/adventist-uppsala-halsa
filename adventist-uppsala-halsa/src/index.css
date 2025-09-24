@@ -23,6 +23,10 @@ li {
   margin-left: 20px;
 }
 
+p {
+  margin: 0px;
+}
+
 /* theme variables */
 :root {
   --color-theme-primary: #3B7B88;
