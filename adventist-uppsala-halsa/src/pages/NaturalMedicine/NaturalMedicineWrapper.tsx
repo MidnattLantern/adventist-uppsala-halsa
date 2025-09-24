@@ -1,9 +1,6 @@
 // original title: NATURLIGA BEHANDLINGAR MOT FÖRKYLNING OCH INFLUENSA
 import Masonry from "react-masonry-css";
-import CarobContent from "../../content/naturalMedicine/CarobContent";
 import CayennepepperContent from "../../content/naturalMedicine/CayennepepperContent";
-import ChagaContent from "../../content/naturalMedicine/ChagaContent";
-import ChicoryrootContent from "../../content/naturalMedicine/ChicoryrootContent";
 import CoughContent from "../../content/naturalMedicine/CoughContent";
 import CoughmedicineContent from "../../content/naturalMedicine/CoughMedicineContent";
 import FlubombContent from "../../content/naturalMedicine/FlubombContent";
@@ -14,7 +11,7 @@ import SoreThroatContent from "../../content/naturalMedicine/SoreThroatContent";
 import WatertherapyContent from "../../content/naturalMedicine/WatertherapyContent";
 import Introduction from "./components/Introduction/Intrroduction";
 import NaturalMedicineCard from "./components/NaturalMedicineCard/NaturalMedicineCard";
-import NavigationTable from "./components/NavigationTable/NavigationTable";
+//import NavigationTable from "./components/NavigationTable/NavigationTable";
 import Styles from "./NaturalMedicineWrapper.module.css";
 import MasonryStyles from "./Masonry.module.css";
 import { useViewPortContext } from "../../contexts/useViewportContext";
@@ -26,7 +23,6 @@ const NaturalMedicineWrapper = () => {
     return(
         <div className={Styles.NaturalMedicineWrapperView}>
             <Introduction/>
-            <NavigationTable/>
 
             <Masonry
             breakpointCols={{
@@ -105,7 +101,6 @@ const NaturalMedicineWrapper = () => {
 
             </Masonry>
 
-            <NavigationTable/>
         </div>
     )
 };
