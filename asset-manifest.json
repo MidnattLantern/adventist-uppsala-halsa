@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/adventist-uppsala-halsa/static/css/main.9e241152.css",
-    "main.js": "/adventist-uppsala-halsa/static/js/main.39625918.js",
+    "main.css": "/adventist-uppsala-halsa/static/css/main.2bbe8fbe.css",
+    "main.js": "/adventist-uppsala-halsa/static/js/main.20813a6e.js",
     "static/js/453.15b4cdc3.chunk.js": "/adventist-uppsala-halsa/static/js/453.15b4cdc3.chunk.js",
     "static/media/unsplash-anastasiia-chepinska-caffeine.jpg": "/adventist-uppsala-halsa/static/media/unsplash-anastasiia-chepinska-caffeine.78a21160a271afeb224c.jpg",
     "static/media/unsplash-nathan-dumlao-phone-addiction.jpg": "/adventist-uppsala-halsa/static/media/unsplash-nathan-dumlao-phone-addiction.a07fd180781afcf4460a.jpg",
@@ -18,15 +18,19 @@
     "static/media/unsplash-martin-dalsgaard-exersice.jpg": "/adventist-uppsala-halsa/static/media/unsplash-martin-dalsgaard-exersice.ea3c3feadb417f07b989.jpg",
     "static/media/unsplash-irina-iriser-nicotine.jpg": "/adventist-uppsala-halsa/static/media/unsplash-irina-iriser-nicotine.1d52192d6c6d24960cff.jpg",
     "static/media/adventist-symbol-cave.png": "/adventist-uppsala-halsa/static/media/adventist-symbol-cave.52d66fd34754db21b87b.png",
+    "static/media/burger-menu.svg": "/adventist-uppsala-halsa/static/media/burger-menu.6f6042a139aa36a9f96d26c1523d205e.svg",
     "index.html": "/adventist-uppsala-halsa/index.html",
+    "static/media/external-link-icon.svg": "/adventist-uppsala-halsa/static/media/external-link-icon.bfff7e79c572ce457b227ea239b6b021.svg",
+    "static/media/close-icon.svg": "/adventist-uppsala-halsa/static/media/close-icon.58075adfbd5f03248ad5a44f1d183b47.svg",
     "static/media/search-icon.svg": "/adventist-uppsala-halsa/static/media/search-icon.74050bccf54808ed47cb3e514a0ad6b6.svg",
     "static/media/generic-star-icon.svg": "/adventist-uppsala-halsa/static/media/generic-star-icon.5909f60f6f6d2fd6170e1e701de5bde7.svg",
-    "main.9e241152.css.map": "/adventist-uppsala-halsa/static/css/main.9e241152.css.map",
-    "main.39625918.js.map": "/adventist-uppsala-halsa/static/js/main.39625918.js.map",
+    "static/media/home-icon.svg": "/adventist-uppsala-halsa/static/media/home-icon.c41f4924283a16f28a68071dc0e52494.svg",
+    "main.2bbe8fbe.css.map": "/adventist-uppsala-halsa/static/css/main.2bbe8fbe.css.map",
+    "main.20813a6e.js.map": "/adventist-uppsala-halsa/static/js/main.20813a6e.js.map",
     "453.15b4cdc3.chunk.js.map": "/adventist-uppsala-halsa/static/js/453.15b4cdc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e241152.css",
-    "static/js/main.39625918.js"
+    "static/css/main.2bbe8fbe.css",
+    "static/js/main.20813a6e.js"
   ]
 }
