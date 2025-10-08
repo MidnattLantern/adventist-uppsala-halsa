@@ -34,7 +34,6 @@ const Introduction = () => {
             <li className={Styles.Paragraph}>Svårigheter att fokusera</li>
             <li className={Styles.Paragraph}>Saknar motivation</li>
             <li className={Styles.Paragraph}>Saknar självinsikt och självdistans</li>
-            <a className={Styles.ExternalLink} target="_blank" rel="noreferrer" href="https://axelsons.se">axelsons.se</a>
         </>
     };
 

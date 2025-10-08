@@ -29,7 +29,6 @@ const Sugar = () => {
             <p className={Styles.Paragraph}><strong>{"SOCKERKONSUMTIONEN I SVERIGE"}</strong></p>
             <p className={Styles.Paragraph}>{"I genomsnitt 40 kg /person varje år, samt lika mycket modifierad stärkelse, som stärkelsesirap, är ännu skadligare än socker."}</p>
             <p className={Styles.Paragraph}>{"88 liter läsk/person varje år. Svensk Fanta innehåller nästan dubbelt så mycket socker (18 bitar/500 ml) än övriga EU- länder."}</p>
-            <a className={Styles.ExternalLink} target="_blank" rel="noreferrer" href="https://krafthalsa.se">{"krafthalsa.se"}</a>
         </div>
     </>)
 };
@@ -47,7 +46,7 @@ const Caffeine = () => {
         </div>
         <div className={Styles.SectionView}>
             <p className={Styles.Paragraph}>{"1 kopp kaffe minskar syre till hjärnan med 40% under flera timmar, vilket ger hjärndimma."}</p>
-            <a className={Styles.ExternalLink} target="_blank" rel="noreferrer" href="http://www.naturalwellness.se">{"naturalwellness.se"}</a>
+            <a className={Styles.ExternalLink} target="_blank" rel="noreferrer" href="https://www.naturalwellness.se/post/koffein-ett-nervgift">{"naturalwellness.se/post/koffein-ett-nervgift"}</a>
             <p className={Styles.Paragraph}>{"Koffein gör människan mer impulsiv, och minskar självkontrollen."}</p>
             <p className={Styles.Paragraph}>{"1 kopp kaffe leder till 50% mer shopping och on-line."}</p>
         </div>
