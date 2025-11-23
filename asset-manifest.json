@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/adventist-uppsala-halsa/static/css/main.2bbe8fbe.css",
-    "main.js": "/adventist-uppsala-halsa/static/js/main.972f1241.js",
+    "main.css": "/adventist-uppsala-halsa/static/css/main.570b514e.css",
+    "main.js": "/adventist-uppsala-halsa/static/js/main.1b99b2c2.js",
     "static/js/453.15b4cdc3.chunk.js": "/adventist-uppsala-halsa/static/js/453.15b4cdc3.chunk.js",
     "static/media/unsplash-anastasiia-chepinska-caffeine.jpg": "/adventist-uppsala-halsa/static/media/unsplash-anastasiia-chepinska-caffeine.78a21160a271afeb224c.jpg",
     "static/media/unsplash-nathan-dumlao-phone-addiction.jpg": "/adventist-uppsala-halsa/static/media/unsplash-nathan-dumlao-phone-addiction.a07fd180781afcf4460a.jpg",
@@ -25,12 +25,12 @@
     "static/media/search-icon.svg": "/adventist-uppsala-halsa/static/media/search-icon.74050bccf54808ed47cb3e514a0ad6b6.svg",
     "static/media/generic-star-icon.svg": "/adventist-uppsala-halsa/static/media/generic-star-icon.5909f60f6f6d2fd6170e1e701de5bde7.svg",
     "static/media/home-icon.svg": "/adventist-uppsala-halsa/static/media/home-icon.c41f4924283a16f28a68071dc0e52494.svg",
-    "main.2bbe8fbe.css.map": "/adventist-uppsala-halsa/static/css/main.2bbe8fbe.css.map",
-    "main.972f1241.js.map": "/adventist-uppsala-halsa/static/js/main.972f1241.js.map",
+    "main.570b514e.css.map": "/adventist-uppsala-halsa/static/css/main.570b514e.css.map",
+    "main.1b99b2c2.js.map": "/adventist-uppsala-halsa/static/js/main.1b99b2c2.js.map",
     "453.15b4cdc3.chunk.js.map": "/adventist-uppsala-halsa/static/js/453.15b4cdc3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bbe8fbe.css",
-    "static/js/main.972f1241.js"
+    "static/css/main.570b514e.css",
+    "static/js/main.1b99b2c2.js"
   ]
 }
