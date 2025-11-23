@@ -24,7 +24,7 @@ const ChicoryrootContent = () => {
     </>)
 };
 
-const ChagaContent = () => {
+const CarobContent = () => {
     return(<>
         <p className={Styles.Paragraph}>{"Koka och drick som te, kaffe eller använd som bas i en smoothie."}</p>
         <p className={Styles.Paragraph}>{"Chaga:"}</p>
@@ -46,7 +46,7 @@ const ChagaContent = () => {
     </>)
 };
 
-const CarobContent = () => {
+const ChagaContent = () => {
     return(<>
         <p className={Styles.Paragraph}>{"Kakaoersättning, fritt från koffein."}</p>
         <p className={Styles.Paragraph}>{"Bra källa till vitaminer och mineraler."}</p>

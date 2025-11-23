@@ -6,7 +6,7 @@ type FlubombContentType = {
 };
 
 const Recipe = () => {
-    return(
+    return(<>
         <table className={Styles.TableSize}>
             <tr>
                 <td className={Styles.AlternativeParagraph}>{"Gurkmeja"}</td>
@@ -39,12 +39,15 @@ const Recipe = () => {
                 <td className={Styles.AlternativeParagraph}>{"5 g"}</td>
             </tr>
         </table>
-    )
+        <p className={Styles.AlternativeParagraph}>Mixa ihop ingridienserna till en smet</p>
+    </>)
 };
 
 const Treatment = () => {
-    return(
-        <p className={Styles.AlternativeParagraph}>{"Drick 3 gånger om dagen."}</p>
+    return(<>
+            <p className={Styles.AlternativeParagraph}>{"Drick 3 gånger om dagen."}</p>
+            <p className={Styles.AlternativeParagraph}>{"Bland en tesked med saften från en halv citron och hett vaten."}</p>
+        </>
     )
 };
 

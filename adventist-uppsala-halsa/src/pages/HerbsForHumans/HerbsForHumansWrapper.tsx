@@ -1,5 +1,9 @@
 import ZigZag from "../../components/ZigZag/ZigZag";
 import Styles from "./HerbsForHumansWrapper.module.css";
+import RecipeContent from "../../content/abuse/RecipeContent";
+import RecipeCard from "../../components/RecipeCard/RecipeCard";
+import Masonry from "react-masonry-css";
+import MasonryStyles from "./Masonry.module.css";
 
 const HerbsForHumansWrapper = () => {
     const Paragraph1 = () => {
@@ -64,7 +68,39 @@ const HerbsForHumansWrapper = () => {
             <hr className={Styles.LineBreak}/>
             <h1 className={Styles.Title}>KLASSIFICERING AV ÖRTER EFTER ANVÄNDNINGSOMRÅDE</h1>
             <ZigZag contentData={[ Paragraph1, Paragraph2, Paragraph3, Paragraph4, Paragraph5, Paragraph6, Paragraph7, Paragraph8, Paragraph9, Paragraph10, Paragraph11, Paragraph12 ]}/>
-            
+        
+            <Masonry
+            breakpointCols={{
+                default: 2,
+                1280: 1 //BREAKPOINT_DESKTOP
+            }}
+            className={MasonryStyles.MasonryGrid}
+            columnClassName={MasonryStyles.MasonryGridColumn}
+            >
+
+                <RecipeCard
+                idName="weed-pesto"
+                title="Ogräspesto"
+                ingredientsContent={<>
+                    <RecipeContent.WeedPestoIngredients/>
+                </>}
+                instructionsContent={<>
+                    <RecipeContent.WeedPestoInstructions/>
+                </>}
+                />
+
+                <RecipeCard
+                idName="fried-dandelion-buds"
+                title="Stekta Maskrosknoppar"
+                ingredientsContent={<>
+                    <RecipeContent.FriedDandelionBudsIngredients/>
+                </>}
+                instructionsContent={<>
+                    <RecipeContent.FriedDandelionBudsInstructions/>
+                </>}
+                />
+
+            </Masonry>
         </div>
     )
 };

@@ -14,7 +14,7 @@ const Recipe = () => {
             </tr>
         </table>
         <p className={Styles.AlternativeParagraph}>{"Koka gullöken, dela sedan på mitten."}</p>
-        <p className={Styles.AlternativeParagraph}>{"Krama ur löksaften."}</p>
+        <p className={Styles.AlternativeParagraph}>{"Krama ur lite av löksaften."}</p>
     </>)
 };
 
@@ -22,7 +22,7 @@ const Treatment = () => {
     return(<>
         <p className={Styles.AlternativeParagraph}>{"Behandlas efter att det svalnat något."}</p>
         <p className={Styles.AlternativeParagraph}>{"Häll lite löksaft i örat."}</p>
-        <p className={Styles.AlternativeParagraph}>{"Linda in den andra lökhalvan i bomullstyg, eller en strumpa, och lägg på örat."}</p>
+        <p className={Styles.AlternativeParagraph}>{"Linda in en av lökhalvorna i bomullstyg, eller en strumpa, och lägg på örat."}</p>
         <br/>
         <p className={Styles.AlternativeParagraph}>{"Upprepa behandlingen vid behov."}</p>
     </>)

@@ -30,12 +30,13 @@ const Recipe = () => {
         </tr>
         <tr>
             <td className={Styles.AlternativeParagraph}>{"vatten"}</td>
-            <td className={Styles.AlternativeParagraph}>{"2,5 dl"}</td>
+            <td className={Styles.AlternativeParagraph}>{"1 liter"}</td>
         </tr>
     </table>
     <p className={Styles.AlternativeParagraph}>{"Plocka under säsong, och torka. Förvara i mörk, tättslutande burk."}</p>
-    <p className={Styles.AlternativeParagraph}>{"Låt dra i 5-10 minuter."}</p>
+    <p className={Styles.AlternativeParagraph}>{"Koka upp och låt dra i 5-10 minuter."}</p>
     <p className={Styles.AlternativeParagraph}>{"Alternativt i kallt vatten över natten."}</p>
+    <p className={Styles.AlternativeParagraph}>{"För bästa effekt drick utan uppvärmning."}</p>
     </>)
 };
 

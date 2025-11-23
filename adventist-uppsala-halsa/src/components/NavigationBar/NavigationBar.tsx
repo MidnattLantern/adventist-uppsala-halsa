@@ -53,7 +53,7 @@ const NavigationBar = () => {
                 </Link>
                 <hr className={Styles.LineBreak}/>
                 <Link to="/missbruk" onClick={() => {setIsExpanded(false)}} className={Styles.Link}>
-                    <LinkIcon className={Styles.LinkIconSize}/> <p>{"Missbruk"}</p>
+                    <LinkIcon className={Styles.LinkIconSize}/> <p>{"Beroenden"}</p>
                 </Link>
                 <Link to="/hälsa-för-nervsystemet" onClick={() => {setIsExpanded(false)}} className={Styles.Link}>
                     <LinkIcon className={Styles.LinkIconSize}/> <p>{"Hälsa för nervsystemet"}</p>

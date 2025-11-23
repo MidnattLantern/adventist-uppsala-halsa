@@ -16,7 +16,7 @@ const Treatment = () => {
         <p className={Styles.AlternativeParagraph}>{"Kallt omslag runt halsen."}</p>
         <p className={Styles.AlternativeParagraph}>{"Inandning av vattenånga:"}</p>
         <li className={Styles.AlternativeListItem}>{"3 minuter,"}</li>
-        <li className={Styles.AlternativeListItem}>{"bada med kallt vatten i 30 sekunder,"}</li>
+        <li className={Styles.AlternativeListItem}>{"badda med kallt vatten i 30 sekunder,"}</li>
         <li className={Styles.AlternativeListItem}>{"upprepa tre gånger."}</li>
         <br/>
         <li className={Styles.AlternativeListItem}>{"Effektivt mot nästäppa och bihåleinflammation. Du kan använda någon droppe av eterisk olja, tex eucalyptus, timjan eller rosmarin i vattenångan."}</li>

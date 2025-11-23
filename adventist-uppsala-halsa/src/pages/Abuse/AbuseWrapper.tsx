@@ -84,6 +84,33 @@ const AbuseWrapper = () => {
                 }
             </div>
 
+            <h1 className={Styles.Title}>{"ERSÄTTNING"}</h1>
+
+            <Masonry
+            breakpointCols={{
+                default: 2,
+                1280: 1 //BREAKPOINT_DESKTOP
+            }}
+            className={MasonryStyles.MasonryGrid}
+            columnClassName={MasonryStyles.MasonryGridColumn}
+            >
+                <ReplacementCard
+                    title={"Cikoriarot"}
+                    idName="chicoryroot"
+                    content={<ReplacementContent.ChicoryrootContent/>}
+                />
+                <ReplacementCard
+                    title={"Carob"}
+                    idName="carob"
+                    content={<ReplacementContent.ChagaContent/>}
+                />
+                <ReplacementCard
+                    title={"Chaga Sprängticka"}
+                    idName="chaga"
+                    content={<ReplacementContent.CarobContent/>}
+                />
+            </Masonry>
+
             <h1 className={Styles.Title}>{"HÄLSOSAMMA RECEPT"}</h1>
             <Masonry
             breakpointCols={{
@@ -115,56 +142,8 @@ const AbuseWrapper = () => {
                 </>}
                 />
 
-                <RecipeCard
-                idName="weed-pesto"
-                title="Ogräspesto"
-                ingredientsContent={<>
-                    <RecipeContent.WeedPestoIngredients/>
-                </>}
-                instructionsContent={<>
-                    <RecipeContent.WeedPestoInstructions/>
-                </>}
-                />
-
-                <RecipeCard
-                idName="fried-dandelion-buds"
-                title="Stekta Maskrosknoppar"
-                ingredientsContent={<>
-                    <RecipeContent.FriedDandelionBudsIngredients/>
-                </>}
-                instructionsContent={<>
-                    <RecipeContent.FriedDandelionBudsInstructions/>
-                </>}
-                />
-
             </Masonry>
 
-            <h1 className={Styles.Title}>{"ERSÄTTNING"}</h1>
-
-            <Masonry
-            breakpointCols={{
-                default: 2,
-                1280: 1 //BREAKPOINT_DESKTOP
-            }}
-            className={MasonryStyles.MasonryGrid}
-            columnClassName={MasonryStyles.MasonryGridColumn}
-            >
-                <ReplacementCard
-                    title={"Cikoriarot"}
-                    idName="chicoryroot"
-                    content={<ReplacementContent.ChicoryrootContent/>}
-                />
-                <ReplacementCard
-                    title={"Carob"}
-                    idName="carob"
-                    content={<ReplacementContent.ChagaContent/>}
-                />
-                <ReplacementCard
-                    title={"Chaga Sprängticka"}
-                    idName="chaga"
-                    content={<ReplacementContent.CarobContent/>}
-                />
-            </Masonry>
         </div>
     )
 };

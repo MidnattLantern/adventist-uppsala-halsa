@@ -1,0 +1,69 @@
+.RecipeCardView {
+    width: calc(100% - 20px);
+    text-align: left;
+    box-shadow: inset 0px 0px 5px var(--color-shadow);
+    background-color: var(--color-dark-background-semi-transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(0,0,0,0);
+}
+.ExpandEntireElement:hover {
+    border: 2px solid var(--color-theme-secondary-light);
+    cursor: pointer;
+}
+.ExpandEntireElement:hover h1 {
+    color: var(--color-theme-secondary-light);
+}
+
+.Title {
+    font-family: var(--font-theme-primary);
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 25px;
+    text-shadow: 0px 1px 1px var(--color-shadow);
+    text-align: center;
+    padding: 5px;
+}
+
+.HeaderRow {
+    width: 80%;
+}
+
+.ContentView {
+    padding: 0px;
+    overflow: hidden;
+    height: auto;
+    padding: 5px;
+}
+.ContentViewExpanded {
+    height: auto;
+}
+
+.SectionView {
+    margin-bottom: 50px;
+}
+
+.SectionTitle {
+    font-family: var(--font-theme-primary);
+    color: var(--color-text-title);
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--color-white);
+    text-shadow: 0px 1px 1px var(--color-shadow);
+}
+.SectionTitleToLeft {
+    text-align: left;
+    margin-left: 20px;
+}
+
+@media (min-width: 1280px) {
+    .RecipeCardView {
+        width: calc(100% - 20px);
+    }
+}

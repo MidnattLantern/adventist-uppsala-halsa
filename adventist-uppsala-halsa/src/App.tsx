@@ -59,7 +59,7 @@ results.forEach(result => {
               <NaturalMedicineWrapper/>
             </Dropdown>
 
-            <Dropdown title='MISSBRUK' expandedByDefault={true} id="abuse">
+            <Dropdown title='BEROENDEN' expandedByDefault={true} id="abuse">
               <AbuseWrapper />
             </Dropdown>
 
